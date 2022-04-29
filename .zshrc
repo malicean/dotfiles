@@ -88,6 +88,10 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# Alternatively, preferred editor for both local and remote sessions
+export EDITOR='helix'
+export VISUAL="$EDITOR"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
