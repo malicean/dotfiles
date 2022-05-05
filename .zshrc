@@ -122,3 +122,4 @@ eval "$(starship init zsh)"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias hx='/usr/bin/helix'
+alias spotdl='/usr/bin/spotdl --download-threads "$(nproc)" --search-threads "$(nproc)"'
