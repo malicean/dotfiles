@@ -1,0 +1,8 @@
+[user]
+	signingKey = 889B45F452E21E41BF5A78BAEC2BB7BED0FFA0BD
+	name = Ash
+	email = ash.zsh@proton.me
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
