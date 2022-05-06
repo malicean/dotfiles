@@ -126,7 +126,7 @@ eval "$(starship init zsh)"
 
 # Dotfiles
 # https://www.atlassian.com/git/tutorials/dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias tig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias hx='/usr/bin/helix'
 alias spotdl='/usr/bin/spotdl --download-threads "$(nproc)" --search-threads "$(nproc)"'
