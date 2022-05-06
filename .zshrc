@@ -162,10 +162,6 @@ do
         break
       fi
     done
-    
-    if [ -z "$invoke" ]; then
-      echo Could not find absolute path to "$name" ("$basename")
-    fi
 done
 
 options[shwordsplit]=$OLD_SHWORDSPLIT
