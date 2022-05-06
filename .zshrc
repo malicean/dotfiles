@@ -75,10 +75,13 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-# Rustup autocompletion support
+# Autocompletion support
 # Must be performed before compinit, which happens in oh-my-zsh.sh sourcing below
-rustup completions zsh > ~/.zfunc/_rustup
-fpath+=~/.zfunc
+zfunc="$HOME/.zfunc"
+mkdir -p "$zfunc"
+fpath+="$zfunc"
+
+rustup completions zsh > "$zfunc/_rustup"
 
 # Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
 ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
