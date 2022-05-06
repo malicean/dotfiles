@@ -1,5 +1,3 @@
-export PATH="$PATH:$HOME/.cargo/bin"
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -77,7 +75,9 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
 ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
