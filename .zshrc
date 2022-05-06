@@ -75,9 +75,13 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# Rustup autocompletion support
+# Must be performed before compinit, which happens in oh-my-zsh.sh sourcing below
+rustup completions zsh > ~/.zfunc/_rustup
+fpath+=~/.zfunc
+
 # Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
 ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -128,5 +132,38 @@ eval "$(starship init zsh)"
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias tig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias hx='/usr/bin/helix'
-alias spotdl='/usr/bin/spotdl --download-threads "$(nproc)" --search-threads "$(nproc)"'
+# Possibly local-but-sometimes-not binaries
+OLD_IFS=$IFS
+IFS=':'
+OLD_SHWORDSPLIT=$options[shwordsplit]
+setopt shwordsplit
+
+for tuple in \
+  'hx:helix:' \
+  'spotdl:spotdl:--download-threads "$(nproc)" --search-threads "$(nproc)"'
+do
+    set -- $tuple
+    name=$1
+    basename=$2
+    args=$3
+    
+    for stem in '/usr/bin' '/usr/local/bin' "$HOME/.cargo/bin"; do
+      invoke="$stem/$basename"
+      
+       if [ -f "$invoke" ]; then
+        if [ ! -z "$args" ]; then
+          invoke+=" $args"
+        fi
+        
+        alias $name="$invoke"
+        break
+      fi
+    done
+    
+    if [ -z "$invoke" ]; then
+      echo Could not find absolute path to "$name" ("$basename")
+    fi
+done
+
+options[shwordsplit]=$OLD_SHWORDSPLIT
+IFS=$OLD_IFS
