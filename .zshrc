@@ -62,31 +62,6 @@ HIST_STAMPS="dd.mm.yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  autoupdate
-  git
-  zsh-autosuggestions
-  zsh-history-substring-search
-  zsh-syntax-highlighting
-)
-
-# Autocompletion support
-# Must be performed before compinit, which happens in oh-my-zsh.sh sourcing below
-zfunc="$HOME/.zfunc"
-mkdir -p "$zfunc"
-fpath+="$zfunc"
-
-rustup completions zsh > "$zfunc/_rustup"
-
-# Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
-ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -117,6 +92,35 @@ export VISUAL="$EDITOR"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Golang
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  autoupdate
+  git
+  zsh-autosuggestions
+  zsh-history-substring-search
+  zsh-syntax-highlighting
+)
+
+# Autocompletion support
+# Must be performed before compinit, which happens in oh-my-zsh.sh sourcing below
+zfunc="$HOME/.zfunc"
+mkdir -p "$zfunc"
+fpath+="$zfunc"
+
+rustup completions zsh > "$zfunc/_rustup"
+packwiz completion zsh > "$zfunc/_packwiz"
+
+# Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
+ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
+source $ZSH/oh-my-zsh.sh
 # GPG WSL fix
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
@@ -126,6 +130,7 @@ unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
+
 
 # Startup some CLI fancy-fication
 eval "$(zoxide init zsh)"
