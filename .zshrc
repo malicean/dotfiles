@@ -116,7 +116,7 @@ mkdir -p "$zfunc"
 fpath+="$zfunc"
 
 rustup completions zsh > "$zfunc/_rustup"
-packwiz completion zsh > "$zfunc/_packwiz"
+# packwiz completion zsh > "$zfunc/_packwiz"
 
 # Stores the compdump in a cache folder, rather than the home directory (WHY IS THIS THE DEFAULT)
 ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump"
