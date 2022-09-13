@@ -10,11 +10,9 @@ zfunc="$XDG_STATE_HOME"/zfunc
 fpath=($fpath "$zfunc")
 
 rustup completions zsh > "$zfunc"/_rustup
-# packwiz completion zsh > "$zfunc/_packwiz"
 
 # Oh My Zsh
 ZSH_THEME="robbyrussell"
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(
@@ -38,5 +36,7 @@ eval "$(starship init zsh)"
 alias tig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 ## Helpful
-alias rc='hx "$ZSHDOTDIR"/.zshrc'
+function zx {
+  hx "$ZDOTDIR"/".zsh$1"
+}
 alias py='ipython3'
