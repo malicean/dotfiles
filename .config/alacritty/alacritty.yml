@@ -7,7 +7,7 @@ font:
     style: Bold
   size: 16
 window:
-  opacity: 0.9
+  opacity: 0.8
         
 # Colors (Monokai Dark)
 colors:
