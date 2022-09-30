@@ -39,4 +39,5 @@ alias tig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 function zx {
   hx "$ZDOTDIR"/".zsh$1"
 }
-alias py='ipython3'
+alias py=ipython3
+alias arip="$XDG_DATA_HOME"/AssetRipper/AssetRipper
