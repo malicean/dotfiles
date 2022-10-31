@@ -1,0 +1,11 @@
+@theme "themes/monokai.rasi"
+
+window {
+	width: 200px;
+}
+
+listview {
+	lines: 7;
+	columns: 1;
+	scrollbar: false;
+}

@@ -1,0 +1,5 @@
+@theme "themes/monokai.rasi"
+
+configuration {
+	font: "FiraCode Nerd Font 16";
+}

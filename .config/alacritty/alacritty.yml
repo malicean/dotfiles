@@ -5,7 +5,7 @@ font:
   bold:
     family: FiraCode Nerd Font
     style: Bold
-  size: 16
+  size: 8
 window:
   opacity: 0.8
         

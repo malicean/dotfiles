@@ -1,14 +1,27 @@
-[user]
-	signingKey = 889B45F452E21E41BF5A78BAEC2BB7BED0FFA0BD
-	name = Ash
-	email = ash.zsh@proton.me
+[add.interactive]
+	userBuiltin = false
+[core]
+	pager = delta
 [commit]
 	gpgSign = true
+[delta]
+	navigate = true
+	light = false
+[diff]
+	colorMoved = default
+[interactive]
+	diffFilter = delta --color-only
 [init]
 	defaultBranch = main
+[fetch]
+	prune = true
+[merge]
+	conflictstyle = diff3
 [pull]
 	rebase = true
 [push]
 	autoSetupRemote = true
-[fetch]
-	prune = true
+[user]
+	signingKey = 889B45F452E21E41BF5A78BAEC2BB7BED0FFA0BD
+	name = Ash
+	email = ash.zsh@proton.me
