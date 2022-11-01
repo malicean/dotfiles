@@ -210,7 +210,7 @@ bar {
 
 exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
-exec_always --no-startup-id feh --bg-fill --randomize --recursive ~/pic/bg 
+exec_always --no-startup-id feh --bg-fill --randomize --recursive --no-fehbg ~/pic/bg 
 
 assign [class="/opt/spotify/spotify"] $ws9
 assign [class="discord"] $ws10

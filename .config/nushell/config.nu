@@ -510,7 +510,3 @@ let-env config = {
     }
   ]
 }
-
-sed --in-place --regexp-extended $"s/\\/var\\/run\\/user\\/1000\\/gnupg\\/\(.*)\\/S\\.gpg-agent\\.ssh/\\/var\\/run\\/user\\/1000\\/gnupg\\/(gpgconf --list-dirs agent-ssh-socket | rg '/run/user/1000/gnupg/(.+)/S\.gpg-agent\.ssh' -or '$1' | str trim)\\/S\\.gpg-agent\\.ssh/" .ssh/config
-gpgconf --launch gpg-agent
-echo UPDATESTARTUPTTY | gpg-connect-agent | save --raw /dev/null
