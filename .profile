@@ -1,0 +1,2 @@
+source ~/.config/secrets
+export OPENWEATHERMAP_API_KEY OPENWEATHERMAP_CITY_ID
