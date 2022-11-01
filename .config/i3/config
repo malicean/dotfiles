@@ -9,7 +9,7 @@ exec --no-startup-id xinput set-prop "ELAN1201:00 04F3:3098 Touchpad" "libinput 
 
 set $mod Mod4
 
-font pango:FiraCode Nerd Font, 16
+font pango:CozetteVector 16
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -191,7 +191,7 @@ client.background       #ffffff
 bar {
         status_command i3status-rs
         
-        font pango:FiraCode Nerd Font 16
+        font pango:CozetteVector 16
         
         position top
         tray_output none
