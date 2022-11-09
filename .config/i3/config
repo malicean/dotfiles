@@ -208,6 +208,7 @@ bar {
         }
 }
 
+exec --no-startup-id udiskie &
 exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
 exec_always --no-startup-id feh --bg-fill --randomize --recursive --no-fehbg ~/pic/bg 
