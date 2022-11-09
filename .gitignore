@@ -1,3 +1,2 @@
+# Avoid self-referential problems
 /.dotfiles
-/.zsh_history
-/.lesshst
