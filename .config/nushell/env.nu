@@ -67,3 +67,5 @@ let-env PATH = ($env.PATH | split row (char esep) | prepend $"($env.CARGO_HOME)/
 
 alias wget = wget $"--hsts-file=($env.XDG_DATA_HOME)/wget-hsts"
 alias tig = git $"--git-dir=($env.HOME)/.dotfiles/" $"--work-tree=($env.HOME)"
+alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
+alias py = ipython
