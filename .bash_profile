@@ -1,0 +1,3 @@
+source ~/.bashrc
+
+nu && exit
