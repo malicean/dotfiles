@@ -170,7 +170,8 @@ bindsym $mod+backslash exec --no-startup-id dbus-send --print-reply --dest=org.m
 bindsym $mod+bracketleft exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 bindsym $mod+bracketright exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
-bindsym Print exec flameshot gui
+bindsym Print exec maim -su | xclip -selection clipboard -t image/png -i
+bindsym Shift+Print exec maim -sud 3 | xclip -selection clipboard -t image/png -i
 
 # Remove title bars
 for_window[class=".*"] border pixel 4
@@ -211,7 +212,7 @@ bar {
 exec --no-startup-id udiskie &
 exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
-exec_always --no-startup-id feh --bg-fill --randomize --recursive --no-fehbg ~/pic/bg 
+exec_always --no-startup-id feh --bg-fill --randomize --recursive --no-fehbg ~/pics/bg 
 
 assign [class="/opt/spotify/spotify"] $ws9
 assign [class="discord"] $ws10

@@ -1,3 +1,0 @@
-source ~/.bashrc
-
-nu && exit

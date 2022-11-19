@@ -46,25 +46,6 @@ let-env NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
-# Set XDG directories for use later
-
-# Use helix as text editor
-load-env {
-    "EDITOR": "helix",
-    "VISUAL": "helix"
-}
-
-load-env {
-    "CARGO_HOME": $"($env.XDG_DATA_HOME)/cargo",
-    "IPYTHONDIR": $"($env.XDG_CONFIG_HOME)/ipython",
-    "LESSHISTFILE": $"($env.XDG_CACHE_HOME)/less/history",
-    "PYTHONSTARTUP": "/etc/python/pythonrc"
-    "RUSTUP_HOME": $"($env.XDG_DATA_HOME)/rustup"
-}
-
-# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-let-env PATH = ($env.PATH | split row (char esep) | prepend $"($env.CARGO_HOME)/bin")
-
 alias wget = wget $"--hsts-file=($env.XDG_DATA_HOME)/wget-hsts"
 alias tig = git $"--git-dir=($env.HOME)/.dotfiles/" $"--work-tree=($env.HOME)"
 alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
