@@ -22,6 +22,6 @@
 [push]
 	autoSetupRemote = true
 [user]
-	signingKey = 889B45F452E21E41BF5A78BAEC2BB7BED0FFA0BD
-	name = Ash
+	signingKey = 63230147D45FFC6D97B195751A67E3A80ED23F68
+	name = Ash Ether
 	email = ash.zsh@proton.me
