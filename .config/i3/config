@@ -215,5 +215,5 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id dunst
 exec_always --no-startup-id feh --bg-fill --randomize --recursive --no-fehbg ~/pics/wallpapers 
 
-assign [class="/opt/spotify/spotify"] $ws9
+for_window [class="Spotify"] move container to workspace $ws9
 assign [class="discord"] $ws10
