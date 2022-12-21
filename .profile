@@ -22,7 +22,3 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
 export PATH="$PATH":"$CARGO_HOME"/bin
-
-source ~/.bashrc
-
-nu && exit
