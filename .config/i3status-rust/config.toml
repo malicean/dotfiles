@@ -63,4 +63,4 @@ format = "{time:3} {power}"
 [[block]]
 block = "time"
 interval = 5
-format = "%a %d-%m %R"
+format = "%R %a %d-%m"
