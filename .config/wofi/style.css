@@ -1,0 +1,38 @@
+@define-color bg rgba(39, 40, 34, 0.9);
+@define-color fg #f8f8f0;
+@define-color highlight #6a255b;
+@define-color trim #5e2151;
+
+* {
+  font-size: 20px;
+  font-family: Fira Code NerdFont;
+}
+
+#window {
+  background: transparent;
+}
+
+#outer-box {
+  background: @bg;
+
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#input {
+  background: transparent;
+  border: none;
+
+  padding: 0.25em;
+}
+
+#entry {
+  padding: 0.25em;
+}
+
+#entry:selected {
+  background: @highlight;
+  border: 0.25em solid @trim;
+
+  border-radius: 0.25em;
+}

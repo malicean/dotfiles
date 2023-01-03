@@ -1,4 +1,2 @@
 [Desktop Entry]
-Type=Application
-Name=Electron 19
-Hidden=true
+NoDisplay=true

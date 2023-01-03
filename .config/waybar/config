@@ -1,0 +1,92 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 0, 
+  "modules-left": [
+    "network",
+    "cpu",
+    "memory",
+    "temperature"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "wireplumber",
+    "backlight",
+    "battery",
+  ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M | %d %b}",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": " {usage:<2}",
+    "interval": 3,
+    "tooltip": false
+  },
+  "memory": {
+    "format": " {percentage:<2}",
+    "interval": 3
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC:<2}",
+    "format-icons": [
+      "懲",
+      "",
+      ""
+    ],
+    "interval": 3
+  },
+  "backlight": {
+    "format": "{percent:>2} {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "battery": {
+    "states": {
+      "good": 60,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{power:>3.1f} / {time} {icon}",
+    "format-time": "{H}:{M:02}",
+    "format-charging": "{capacity} ",
+    "format-plugged": "{capacity} ",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "network": {
+    "format-wifi": "  {essid} / {signalStrength:<3}",
+    "format-ethernet": " {ipaddr}",
+    "format-linked": " L:{ifname}",
+    "format-disconnected": "⚠ Disconnected",
+  },
+  "wireplumber": {
+    "format": "{volume:>2} ",
+    "format-muted": "{volume:>2} "
+  }
+}

@@ -1,0 +1,90 @@
+@define-color bg rgba(39, 40, 34, 0.9);
+@define-color fg #f8f8f0;
+
+* {
+  font-size: 20px;
+  font-family: Fira Code NerdFont;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#network {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1.5em;
+}
+
+#cpu {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+}
+
+#memory {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+}
+
+#temperature {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+
+  border-bottom-right-radius: 0.5em;
+}
+
+#clock {
+  background: @bg;
+  color: @fg;
+
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 2em;
+}
+
+#idle_inhibitor {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1.5em 0.25em 1em;
+
+  border-bottom-left-radius: 0.5em;
+}
+
+#wireplumber {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+}
+
+#backlight {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+}
+
+#battery {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1.5em 0.25em 1em;
+}
