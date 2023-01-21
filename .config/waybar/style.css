@@ -1,13 +1,25 @@
 @define-color bg rgba(39, 40, 34, 0.9);
-@define-color fg #f8f8f0;
+@define-color fg #b8b8b0;
+@define-color active #ffaa5c;
+@define-color visible #5cff98;
+@define-color urgent #d14f79;
 
 * {
   font-size: 20px;
   font-family: Fira Code NerdFont;
+  font-weight: bold;
 }
 
 window#waybar {
   background: transparent;
+}
+
+#clock {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
 }
 
 #network {
@@ -15,36 +27,20 @@ window#waybar {
   color: @fg;
 
   margin-bottom: 0.25em;
-  padding: 0.25em 1.5em;
+  padding: 0.25em 1em 0.25em;
 }
 
-#cpu {
+#custom-weather {
   background: @bg;
   color: @fg;
 
   margin-bottom: 0.25em;
-  padding: 0.25em 1em;
-}
-
-#memory {
-  background: @bg;
-  color: @fg;
-
-  margin-bottom: 0.25em;
-  padding: 0.25em 1em;
-}
-
-#temperature {
-  background: @bg;
-  color: @fg;
-
-  margin-bottom: 0.25em;
-  padding: 0.25em 1em;
+  padding: 0.25em 1.5em 0.25em 0.75em;
 
   border-bottom-right-radius: 0.5em;
 }
 
-#clock {
+#workspaces {
   background: @bg;
   color: @fg;
 
@@ -52,7 +48,23 @@ window#waybar {
   border-bottom-right-radius: 0.5em;
 
   margin-bottom: 0.25em;
-  padding: 0.25em 2em;
+  padding: 0.25em 1em 0.25em 0.5em;
+}
+
+#workspaces button {
+  color: @fg;
+}
+
+#workspaces button.active {
+  color: @active;
+}
+
+#workspaces button.visible {
+  color: @visible;
+}
+
+#workspaces button.urgent {
+  color: @urgent;
 }
 
 #idle_inhibitor {
@@ -65,7 +77,15 @@ window#waybar {
   border-bottom-left-radius: 0.5em;
 }
 
-#wireplumber {
+#temperature {
+  background: @bg;
+  color: @fg;
+
+  margin-bottom: 0.25em;
+  padding: 0.25em 1em;
+}
+
+#pulseaudio {
   background: @bg;
   color: @fg;
 
@@ -86,5 +106,5 @@ window#waybar {
   color: @fg;
 
   margin-bottom: 0.25em;
-  padding: 0.25em 1.5em 0.25em 1em;
+  padding: 0.25em 1.5em 0.25em 0.5em;
 }

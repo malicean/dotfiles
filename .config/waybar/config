@@ -3,20 +3,30 @@
   "position": "top",
   "spacing": 0, 
   "modules-left": [
+    "clock",
     "network",
-    "cpu",
-    "memory",
-    "temperature"
+    "custom/weather"
   ],
   "modules-center": [
-    "clock"
+    "wlr/workspaces"
   ],
   "modules-right": [
     "idle_inhibitor",
-    "wireplumber",
+    "temperature",
+    "pulseaudio",
     "backlight",
-    "battery",
+    "battery"
   ],
+  "wlr/workspaces":  {
+    "format": "{icon}",
+    "sort-by-name": false,
+    "sort-by-coordinates": false,
+    "sort-by-number": true,
+    "format-icons": {
+      "9": "阮",
+      "10": "ﭮ",
+    }
+  },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -24,28 +34,9 @@
       "deactivated": ""
     }
   },
-  "clock": {
-    "format": "{:%H:%M | %d %b}",
-    "format-alt": "{:%Y-%m-%d}"
-  },
-  "cpu": {
-    "format": " {usage:<2}",
-    "interval": 3,
-    "tooltip": false
-  },
-  "memory": {
-    "format": " {percentage:<2}",
-    "interval": 3
-  },
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "{icon} {temperatureC:<2}",
-    "format-icons": [
-      "懲",
-      "",
-      ""
-    ],
-    "interval": 3
+  "pulseaudio": {
+    "format": "{volume:>2} ",
+    "format-muted": "{volume:>2} "
   },
   "backlight": {
     "format": "{percent:>2} {icon}",
@@ -61,6 +52,16 @@
       ""
     ]
   },
+  "network": {
+    "format-wifi": "  {essid} / {signalStrength:<3}",
+    "format-ethernet": "  {ipaddr}",
+    "format-linked": "  L:{ifname}",
+    "format-disconnected": "⚠ Disconnected",
+  },
+  "clock": {
+    "format": "  {:%H:%M | %d %b}",
+    "format-alt": "  {:%Y-%m-%d}"
+  },
   "battery": {
     "states": {
       "good": 60,
@@ -69,8 +70,8 @@
     },
     "format": "{power:>3.1f} / {time} {icon}",
     "format-time": "{H}:{M:02}",
-    "format-charging": "{capacity} ",
-    "format-plugged": "{capacity} ",
+    "format-charging": "{time}  {icon}",
+    "format-plugged": "  {icon}",
     "format-icons": [
       "",
       "",
@@ -79,14 +80,19 @@
       ""
     ]
   },
-  "network": {
-    "format-wifi": "  {essid} / {signalStrength:<3}",
-    "format-ethernet": " {ipaddr}",
-    "format-linked": " L:{ifname}",
-    "format-disconnected": "⚠ Disconnected",
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC:<2} {icon}",
+    "format-icons": [
+      "懲",
+      "",
+      ""
+    ],
+    "interval": 3
   },
-  "wireplumber": {
-    "format": "{volume:>2} ",
-    "format-muted": "{volume:>2} "
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/weather.nu",
+    "interval": 300,
+    "return-type": "json"
   }
 }
