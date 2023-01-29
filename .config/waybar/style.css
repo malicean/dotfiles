@@ -4,10 +4,27 @@
 @define-color visible #5cff98;
 @define-color urgent #d14f79;
 
-* {
+window#waybar {
   font-size: 20px;
   font-family: Fira Code NerdFont;
   font-weight: bold;
+}
+
+tooltip {
+  font-size: 18px;
+  font-family: Fira Code NerdFont;
+
+  background: @bg;
+  color: @fg;
+
+  border-width: 0;
+  border-radius: 1em;
+
+  padding: 0;
+}
+
+tooltip label {
+  padding: 1em 1.5em 1em 1em;
 }
 
 window#waybar {

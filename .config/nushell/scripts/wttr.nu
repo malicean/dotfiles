@@ -1,3 +1,15 @@
+def "into setrise" [
+  object: string
+] {
+  let time = $in
+
+  if $time =~ $"No ($object)\(set|rise)" {
+    null
+  } else {
+    $time | into datetime
+  }
+}
+
 # Fetches current weather data from https://wttr.in and structures it
 # 
 # Signatures:
@@ -7,12 +19,25 @@ export def fetch [] {
 
   let days = ($raw.weather | each { |day|
     let date = ($day.date | into datetime)
+    let ast = $day.astronomy.0
     
     {
       date: $date,
       temp: {
-        c: ($day.mintempC)..($day.maxtempF),
-        f: ($day.mintempF)..($day.maxtempF)
+        c: ($day.mintempC | into int)..($day.maxtempC | into int),
+        f: ($day.mintempF | into int)..($day.maxtempF | into int)
+      },
+      astro: {
+        sun: {
+          rise: ($ast.sunrise | into setrise `sun`), 
+          set: ($ast.sunset | into setrise `sun`)
+        },
+        moon: {
+          rise: ($ast.moonrise | into setrise `moon`),
+          set: ($ast.moonset | into setrise `moon`),
+          phase: $ast.moon_phase,
+          lum: $ast.moon_illumination
+        }
       },
       hourly: ($day.hourly | each { |hour|
         let time = ($hour.time | into int)
@@ -24,8 +49,14 @@ export def fetch [] {
             desc: $hour.weatherDesc
           }
           temp: {
-            c: $hour.tempC,
-            f: $hour.tempF
+            real: {
+              c: $hour.tempC,
+              f: $hour.tempF
+            },
+            feel: {
+              c: $hour.FeelsLikeC,
+              f: $hour.FeelsLikeF
+            }
           },
           wind: {
             km: $hour.windspeedKmph,
@@ -53,8 +84,14 @@ export def fetch [] {
         desc: $now.weatherDesc.0.value
       }
       temp: {
-        c: $now.temp_C,
-        f: $now.temp_F
+        real: {
+          c: $now.temp_C,
+          f: $now.temp_F
+        },
+        feel: {
+          c: $now.FeelsLikeC
+          f: $now.FeelsLikeF
+        }
       },
       wind: {
         kmph: $now.windspeedKmph,
