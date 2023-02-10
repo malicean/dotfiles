@@ -1,0 +1,3 @@
+#! /bin/sh
+
+GAMEMODERUNEXEC="DXVK_ASYNC=1 prime-run mangohud /opt/wine-discord-ipc-bridge/winediscordipcbridge-steam.sh" gamemoderun "$@"
