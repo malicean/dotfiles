@@ -9,6 +9,7 @@ export XDG_DESKTOP_DIR=$HOME
 
 export EDITOR=helix
 export VISUAL=helix
+export SUDOEDITOR=helix
 
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export IPYTHONDIR="$XDG_CONFIG_HOME"/ipython
