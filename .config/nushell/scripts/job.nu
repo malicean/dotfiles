@@ -9,7 +9,7 @@ export def spawn [
     --group (-g): string = "default", # The group
     command: block                    # The command to spawn
 ] {
-    let source_code = (view-source $command | str trim -l -c '{' | str trim -r -c '}')
+    let source_code = (view source $command | str trim -l -c '{' | str trim -r -c '}')
     let config_path = $nu.config-path
     let env_path = $nu.env-path
 

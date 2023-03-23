@@ -527,6 +527,7 @@ let-env config = {
 
 use job.nu
 use wttr.nu
+use math.nu
 
 # Changes the extension of a path
 def "path change ext" [
@@ -562,41 +563,4 @@ def livetex [
 
   job kill $render.job_id | save --raw --force /dev/null
   job kill $view.job_id | save --raw --force /dev/null
-}
-
-# Calculates the factorial of a number
-#
-# Signatures:
-# <int> | math fac -> <int>
-def "math fac" [] {
-  1..$in | math product
-}
-
-# Calculates the number of permutations from a given set size
-#
-# Signatures:
-# <int> | math perm <int> -> <int>
-def "math perm" [
-  choose: int
-] {
-  let set = $in
-
-  # A naive approach would be:
-  # ($set | math fac) / (($set - $choose) | math fac)
-  # However, given that a! = 1..a | math product and a! / b! = b..a | math product,
-  # we can calculate the numerator and denominator and then do a smart calculation
-
-  ($set - $choose)..$set | skip 1 | math product
-}
-
-# Calculates the number of combinations from a given set size
-#
-# Signatures:
-# <int> | math perm <int> -> <int>
-def "math comb" [
-  choose: int
-] {
-  let set = $in
-
-  ($set | math perm $choose) / ($choose | math fac)
 }
