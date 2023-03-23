@@ -22,6 +22,7 @@
     "sort-by-name": false,
     "sort-by-coordinates": false,
     "sort-by-number": true,
+    "all-outputs": true,
     "format-icons": {
       "9": "阮",
       "10": "ﭮ",
