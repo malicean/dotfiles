@@ -525,7 +525,7 @@ let-env config = {
   ]
 }
 
-use job.nu
+# use job.nu
 use wttr.nu
 
 # Changes the extension of a path
