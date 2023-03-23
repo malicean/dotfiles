@@ -1,4 +1,4 @@
-export def stack [
+export def main [
   --spacer (-s): any
 ] {
   let l2 = $in

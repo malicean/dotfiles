@@ -48,7 +48,7 @@ let-env NU_PLUGIN_DIRS = [
 
 let-env PATH = ($env.PATH | append $"($env.HOME)/.local/bin")
 
-# alias wget = wget $"--hsts-file=($env.XDG_DATA_HOME)/wget-hsts"
+old-alias wget = wget $"--hsts-file=($env.XDG_DATA_HOME)/wget-hsts"
 alias tig = git $"--git-dir=($env.HOME)/.dotfiles/" $"--work-tree=($env.HOME)"
 alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
 alias py = ipython

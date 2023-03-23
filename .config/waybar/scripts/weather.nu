@@ -3,7 +3,7 @@
 # TODO: add case for yesterday (at midnight, data becomes [yesterday today tomorrow] rather than [today tomorrow overmorrow])
 
 use wttr.nu
-use stack.nu [ stack ]
+use stack.nu
 
 def setrise [] { 
   let time = $in
@@ -15,7 +15,7 @@ def setrise [] {
   }
 }
 # Padding shortcut
-def spad [length: int] { into string | str lpad --length $length --character ' ' }
+def spad [length: int] { into string | fill --alignment Left --width $length --character ' ' }
 # Triple pads (for temperatures)
 def trip [] { spad 3 }
 # Double pads (for winds)
@@ -76,24 +76,20 @@ def daily [] {
     let closure = if $is_today {
       let now_index = do { 
         $data.hourly
-          | each { |h, i| 
-            {
-              index: $i,
-              delta: ((date now) - $h.time)
-            }  
-          }
-          | filter { |p| $p.delta > 0sec }
-          | sort-by delta
+          | each { |h| (date now) - $h.time }
+          | enumerate
+          | filter { |p| $p.item > 0sec }
+          | sort-by item
           | get 0.index
       }
 
-      { |h, i| $h | hourly ($i == $now_index) }
+      { |h| $h.item | hourly ($h.index == $now_index) }
     } else {
-      { |h, i| $h | hourly false }
+      { |h| $h.item | hourly false }
     }
     
 
-    $data.hourly | each $closure
+    $data.hourly | enumerate | each $closure
   }
 
   [
@@ -102,7 +98,7 @@ def daily [] {
     ["󱩱 " ($data.temp.c | first | spad 5) "°            󱣗 " ($data.temp.c | last | spad 5) "°     "]
     ["󱑌 " ($data.astro.sun.rise | setrise) "             󱑌 " ($data.astro.sun.set | setrise) "      "]
     [" " ($data.astro.moon.rise | setrise) "              " ($data.astro.moon.set | setrise) "      " ]
-    [" " ($data.astro.moon.phase | str rpad --length 15 --character " ") "   󱟇 " ($data.astro.moon.lum | spad 5) "%     "]
+    [" " ($data.astro.moon.phase | fill --alignment Right --width 15 --character " ") "   󱟇 " ($data.astro.moon.lum | spad 5) "%     "]
   ] 
     | append $hourly
 }

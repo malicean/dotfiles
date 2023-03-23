@@ -15,7 +15,7 @@ def "into setrise" [
 # Signatures:
 # <nothing> | fetch -> record
 export def fetch [] {
-  let raw = (curl -s `https://wttr.in/?format=j1` | from json)
+  let raw = (http get `https://wttr.in/?format=j1`)
 
   let days = ($raw.weather | each { |day|
     let date = ($day.date | into datetime)
