@@ -36,8 +36,8 @@
     }
   },
   "pulseaudio": {
-    "format": "{volume:>2} ",
-    "format-muted": "{volume:>2} "
+    "format": "{volume:>3} ",
+    "format-muted": "{volume:>3} "
   },
   "backlight": {
     "format": "{percent:>2} {icon}",

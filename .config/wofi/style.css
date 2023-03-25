@@ -1,29 +1,28 @@
-@define-color bg rgba(39, 40, 34, 0.9);
-@define-color fg #f8f8f0;
-@define-color highlight #6a255b;
-@define-color trim #5e2151;
+@define-color bg #002a3a;
+@define-color fg #fffaf3;
+@define-color neg #0d0f18;
+@define-color highlight #008df8;
 
 * {
-  font-size: 20px;
+  font-size: 24px;
   font-family: Fira Code NerdFont;
-}
-
-#window {
-  background: transparent;
 }
 
 #outer-box {
   background: @bg;
 
-  padding: 1em;
-  border-radius: 1em;
+  padding: 0.25em;
 }
 
 #input {
-  background: transparent;
+  font-size: 30px;
+  background: @neg;
+  
   border: none;
+  border-radius: 0;
 
-  padding: 0.25em;
+  padding: 0.75em 0.5em 0.25em 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #entry {
@@ -32,7 +31,4 @@
 
 #entry:selected {
   background: @highlight;
-  border: 0.25em solid @trim;
-
-  border-radius: 0.25em;
 }
