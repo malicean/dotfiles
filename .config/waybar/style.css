@@ -1,6 +1,5 @@
 @define-color bg #0d0f18;
 @define-color fg #b8b8b0;
-@define-color accent #002a3a;
 
 @define-color active #008df8;
 @define-color visible #a6a6a6;
@@ -32,9 +31,6 @@ tooltip label {
 window#waybar {
   background: @bg;
   color: @fg;
-  
-  border: solid @accent;
-  border-bottom-width: 0.5em;
 }
 
 #clock {

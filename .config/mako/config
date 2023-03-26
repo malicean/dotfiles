@@ -1,24 +1,21 @@
-font=Fira Code NerdFont 18
+font=Fira Code NerdFont 14
 
 background-color=#272822cc
-text-color=#f8f8f0
+text-color=#b8b8b0
 
 text-alignment=right
 icon-location=right
 width=800
 height=300
 padding=8
-margin=8
 
-border-size=4
-border-color=#f77093ee
-border-radius=8
+border-size=2
+border-color=#008df8
 
 default-timeout=5000
 
 layer=overlay
 anchor=bottom-right
-outer-margin=16
 
 [app-name=Spotify]
 invisible=1
