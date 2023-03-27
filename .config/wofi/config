@@ -1,1 +1,6 @@
 mode=drun,run
+prompt=
+insensitive=true
+sort_order=alphabetical
+allow_images=true
+normal_window=true

@@ -1,4 +1,4 @@
-before-sleep swaylock
+before-sleep 'swaylock'
 before-sleep 'playerctl pause'
-timeout 180 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-timeout 360 'systemctl suspend'
+timeout 300 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+timeout 600 'systemctl suspend'

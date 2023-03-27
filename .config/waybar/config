@@ -24,7 +24,9 @@
     "sort-by-number": true,
     "all-outputs": true,
     "format-icons": {
-      "9": "阮",
+      "7": "󱔼",
+      "8": "阮",
+      "9": "󰍩",
       "10": "ﭮ",
     }
   },
@@ -36,8 +38,8 @@
     }
   },
   "pulseaudio": {
-    "format": "{volume:>3} ",
-    "format-muted": "{volume:>3} "
+    "format": "{volume:>2} ",
+    "format-muted": "{volume:>2} "
   },
   "backlight": {
     "format": "{percent:>2} {icon}",
@@ -54,7 +56,7 @@
     ]
   },
   "network": {
-    "format-wifi": "  {essid} / {signalStrength:<3}",
+    "format-wifi": "  {essid} / {signalStrength:<2}",
     "format-ethernet": "  {ipaddr}",
     "format-linked": "  L:{ifname}",
     "format-disconnected": "⚠ Disconnected",

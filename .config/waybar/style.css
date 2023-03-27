@@ -1,5 +1,5 @@
 @define-color bg #0d0f18;
-@define-color fg #b8b8b0;
+@define-color fg #a6a6a6;
 
 @define-color active #008df8;
 @define-color visible #a6a6a6;
@@ -9,6 +9,9 @@ window#waybar {
   font-size: 12px;
   font-family: Fira Code NerdFont;
   font-weight: bold;
+
+  background: @bg;
+  color: @fg;
 }
 
 tooltip {
@@ -28,29 +31,20 @@ tooltip label {
   padding: 1em 1.5em 1em 1em;
 }
 
-window#waybar {
-  background: @bg;
-  color: @fg;
-}
-
 #clock {
-  padding: 0.25em 1em;
+  padding: 0 1em;
 }
 
 #network {
-  background: @bg;
-  color: @fg;
-
-  margin-bottom: 0.25em;
-  padding: 0.25em 1em 0.25em;
+  padding: 0 1em;
 }
 
 #custom-weather {
-  padding: 0.25em 1.5em 0.25em 0.75em;
+  padding: 0 1em;
 }
 
 #workspaces {
-  padding: 0.25em 1em 0.25em 0.5em;
+  padding: 0 0.5em;
 }
 
 #workspaces button {
@@ -70,29 +64,21 @@ window#waybar {
 }
 
 #idle_inhibitor {
-  padding: 0.25em 1.5em 0.25em 1em;
+  padding: 0 1em;
 }
 
 #temperature {
-  padding: 0.25em 1em;
+  padding: 0 1em;
 }
 
 #pulseaudio {
-  padding: 0.25em 1em;
+  padding: 0 1em;
 }
 
 #backlight {
-  background: @bg;
-  color: @fg;
-
-  margin-bottom: 0.25em;
-  padding: 0.25em 1em;
+  padding: 0 1em;
 }
 
 #battery {
-  background: @bg;
-  color: @fg;
-
-  margin-bottom: 0.25em;
-  padding: 0.25em 1.5em 0.25em 0.5em;
+  padding: 0 1em;
 }

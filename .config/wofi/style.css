@@ -1,7 +1,7 @@
-@define-color bg #002a3a;
-@define-color fg #fffaf3;
-@define-color neg #0d0f18;
-@define-color highlight #008df8;
+@define-color fg-focused #fffaf3;
+@define-color fg-unfocused #a6a6a6;
+@define-color bg-unfocused #0d0f18;
+@define-color bg-focused #002a3a;
 
 * {
   font-size: 24px;
@@ -9,15 +9,13 @@
 }
 
 #outer-box {
-  background: @bg;
-
-  padding: 0.25em;
+  background: @bg-unfocused;
 }
 
 #input {
   font-size: 30px;
-  background: @neg;
-  
+  background: @bg-focused;
+
   border: none;
   border-radius: 0;
 
@@ -27,8 +25,11 @@
 
 #entry {
   padding: 0.25em;
+  background: @bg-unfocused;
+  color: @fg-unfocused;
 }
 
 #entry:selected {
-  background: @highlight;
+  background: @bg-focused;
+  color: @fg-focused;
 }
