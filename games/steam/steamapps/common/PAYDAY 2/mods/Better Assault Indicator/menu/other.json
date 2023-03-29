@@ -1,0 +1,40 @@
+{
+	"menu_id" : "bai_other_menu",
+	"parent_menu" : "bai_menu",
+	"title" : "bai_other",
+	"description" : "bai_other_desc",
+	"items" : [
+		{
+			"type" : "label",
+			"title" : "bai_color_blindness"
+		},
+        {
+            "type" : "button",
+			"id" : "normal",
+			"title" : "normal",
+			"description" : "normal",
+			"callback" : "normal"
+        },
+		{
+			"type": "button",
+			"id": "protanopia",
+			"title": "protanopia",
+			"description": "protanopia",
+			"callback": "protanopia"
+		},
+		{
+			"type": "button",
+			"id": "deuteranopia",
+			"title": "deuteranopia",
+			"description": "deuteranopia",
+			"callback": "deuteranopia"
+		},
+		{
+			"type": "button",
+			"id": "tritanopia",
+			"title": "tritanopia",
+			"description": "tritanopia",
+			"callback": "tritanopia"
+		}
+	]
+}

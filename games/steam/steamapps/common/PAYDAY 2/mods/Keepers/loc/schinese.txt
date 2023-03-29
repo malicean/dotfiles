@@ -1,0 +1,64 @@
+{
+	"kpr_options_menu_title" : "守护者",
+	"kpr_options_menu_desc"  : "",
+
+	"kpr_options_filter_mode_title" : "锁定呼喊",
+	"kpr_options_filter_mode_desc" : "移动类命令(例如停止AI)将被锁定。您需要按住解锁键来激活命令，默认是\"左shift\"，您可以在mods / saves / keepers.txt 中更改它",
+
+	"kpr_options_multi_filter_mode_a" : "不设置",
+	"kpr_options_multi_filter_mode_b" : "当前区域",
+	"kpr_options_multi_filter_mode_c" : "全部",
+
+	"kpr_options_delayed_awakening_input_title" : "防止误触",
+	"kpr_options_delayed_awakening_input_desc" : "你需要按住“停止AI”键0.5秒来在潜入中呼叫AI队友跟随\n进入强袭后该键位会被分配设置中未定义的的命令。如：主要\"坚守\"，次要\"巡逻\"，那么长按就是\"掩护\"",
+
+	"kpr_options_hold_primary_interaction_emulates_secondary_interaction_title" : "VR模拟输入",
+	"kpr_options_hold_primary_interaction_emulates_secondary_interaction_desc" : "本选项适用于缺少“停止AI”键位的VR用户\n 勾选后，按住“呼喊/互动”键0.5秒来使用停止AI功能",
+
+	"kpr_options_teamais_can_interact_title" : "AI互动",
+	"kpr_options_teamais_can_interact_desc" : "使用“自定义路径点”模组标记目标后，按下“停止AI”键呼叫AI队友进行互动[仅限无需道具的互动]\n启用该选项将会使AI恢复时间增加10%，且AI受击无敌时间从0.35秒降至0.05秒",
+
+	"kpr_options_faster_but_weaker_while_carrying_title" : "运包再平衡",
+	"kpr_options_faster_but_weaker_while_carrying_desc" : "Bot背包移速惩罚减半，但回血频率也减半。",
+
+	"kpr_options_interaction_timer_multiplier_title" : "互动延长",
+	"kpr_options_interaction_timer_multiplier_desc" : "延长AI的互动时间\n设置为X表示互动时间延长至原来的X倍（若设置为2则AI互动时间延长至原来的2倍）",
+
+	"kpr_options_show_joker_health_title" : "显示变节警察的状态",
+	"kpr_options_show_joker_health_desc" : "在名字的右边显示变节警察的状态栏",
+
+	"kpr_options_show_my_joker_name_title" : "显示变节警察名称",
+	"kpr_options_show_my_joker_name_desc" : "为变节警察命名",
+
+	"kpr_options_send_my_joker_name_title" : "同步我的变节警察名字",
+	"kpr_options_send_my_joker_name_desc" : "同步您的变节警察名字到其他玩家的客户端",
+
+	"kpr_options_show_other_jokers_names_title" : "同步其他变节警察名字",
+	"kpr_options_show_other_jokers_names_desc" : "显示其他玩家变节警察的名称",
+
+	"kpr_keybind_follow_title" : "全体命令",
+	"kpr_keybind_follow_desc" : "",
+
+	"kpr_keybind_stay_title" : "坚守阵地",
+	"kpr_keybind_stay_desc" : "",
+
+	"kpr_options_primary_mode_title" : "主要命令",
+	"kpr_options_primary_mode_desc" : "设置按下\"呼喊/互动\"键时的命令（默认为F）",
+
+	"kpr_options_secondary_mode_title" : "次要命令",
+    "kpr_options_secondary_mode_desc" : "设置按下\"停止AI\"键时命令（默认为Z）",
+
+	"kpr_options_keybind_mode_title" : "命令设置",
+	"kpr_options_keybind_mode_desc" : "设置\"全体命令\"键的命令",
+
+	"kpr_options_multi_interaction_mode_a" : "默认",
+	"kpr_options_multi_interaction_mode_b" : "坚守",
+	"kpr_options_multi_interaction_mode_c" : "掩护",
+	"kpr_options_multi_interaction_mode_d" : "巡逻",
+
+	"kpr_options_joker_name_title" : "变节警察名称", 
+	"kpr_options_joker_name_desc" : "为您的变节警察命名",
+
+	"kpr_options_joker_speed_title" : "变节警察跟随",
+	"kpr_options_joker_speed_desc" : "变节警察将像您的BOT队友一样跟随您"
+}

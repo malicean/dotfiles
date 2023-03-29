@@ -1,0 +1,32 @@
+Revision 11:
+- added spanish translation by Kilowide
+
+Revision 10:
+- added portuguese translation by HYGRAWSKY
+
+Revision 9:
+- added chinese translation by LR_Daring
+
+Revision 8:
+- set option "mark what is aimed" to enabled by default
+
+Revision 7:
+- added option to disable sentry fire mode interaction
+
+Revision 6:
+- changed update system to Simple Mod Updater
+
+Revision 5:
+- fixed options not saved
+
+Revision 4:
+- ...
+
+Revision 3:
+- fixed a crash with non interactable cameras
+
+Revision 2:
+- added thai translation by NewPJzuza
+
+Revision 1:
+- initial release

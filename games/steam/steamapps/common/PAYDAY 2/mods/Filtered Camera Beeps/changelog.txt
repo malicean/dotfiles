@@ -1,0 +1,51 @@
+Revision 17:
+- changed update system to Simple Mod Updater
+
+Revision 16:
+- ...
+
+Revision 15:
+- fixed an host freeze issue
+
+Revision 14:
+- reworked function _stop_all_sounds()
+
+Revision 13:
+- fixed camera beeping too early for players in casing mode
+
+Revision 12:
+- fixed camera beeping too early for players in casing mode
+
+Revision 11:
+- code clean-up
+
+Revision 10:
+- even more absolutely essential BLT2 integration
+
+Revision 9:
+- more absolutely essential BLT2 integration
+
+Revision 8:
+- BLT2
+
+Revision 7:
+- fixed crash: r6 tried to send network messages when no network session was up
+
+Revision 6:
+- fixed client detection not reset when cam operator is killed
+
+Revision 5:
+- fixed mod.txt (auto-updating was disabled)
+
+Revision 4:
+- fixed beeps not stopped by camera loop
+
+Revision 3:
+- fixed a crash when a bag is not dropped by a player
+- fixed camera synchronization
+
+Revision 2:
+- fixed a shameful oversight in code handling moved hostages
+
+Revision 1:
+- initial release

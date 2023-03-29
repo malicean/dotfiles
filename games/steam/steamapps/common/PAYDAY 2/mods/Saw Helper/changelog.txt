@@ -1,0 +1,5 @@
+﻿Revision 2:
+- changed update system to Simple Mod Updater
+
+Revision 1:
+- initial release

@@ -1,0 +1,16 @@
+{
+    "menu_id": "bai_halo_reach_hud_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_compatibility_11",
+    "items": [
+        {
+            "type" : "toggle",
+            "id" : "bai_halo_reach_hud_use_bai_color_choice",
+            "title" : "bai_halo_reach_hud_use_bai_color",
+            "description" : "bai_halo_reach_hud_use_bai_color_desc",
+            "callback" : "callback_bai_halo_reach_hud_use_bai_color",
+            "value" : "use_bai_color",
+            "default_value" : true
+        }
+    ]
+}

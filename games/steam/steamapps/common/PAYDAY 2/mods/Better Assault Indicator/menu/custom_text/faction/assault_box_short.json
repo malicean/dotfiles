@@ -1,0 +1,140 @@
+{
+    "menu_id": "bai_assault_box_custom_text_short_faction_menu",
+    "parent_menu" : "bai_assault_box_menu",
+    "title" : "bai_custom_text_short",
+    "items": [
+        {
+            "type" : "label",
+            "title" : "bai_swat"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_normal_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "swat"],
+            "value": "swat",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_fbi"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_hard_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "fbi"],
+            "value": "fbi",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_gensec"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_very_hard_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "gensec"],
+            "value": "gensec",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_zeal"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_overkill_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "zeal"],
+            "value": "zeal",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_russia"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_mayhem_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "russia"],
+            "value": "russia",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "label",
+            "title": "bai_zombie"
+        },
+        {
+            "type": "input",
+            "id": "bai_assault_box_custom_text_short_zombie_input_choice",
+            "title": "bai_custom_text_input",
+            "description": "bai_custom_text_input_desc",
+            "callback": "SetCustomShortText",
+            "callback_arguments": ["assault", "zombie"],
+            "value": "zombie",
+            "default_value": ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_murkywater"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_death_sentence_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "murkywater"],
+            "value": "murkywater",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_federales"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_assault_box_custom_text_short_federales_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["assault", "federales"],
+            "value": "federales",
+            "default_value" : ""
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+2017.10.25
+-Fixed a crash that was introduced with U162 if you had damage indicators on.
+-Fixed a crash related to the coretable stuff. (For real this time)

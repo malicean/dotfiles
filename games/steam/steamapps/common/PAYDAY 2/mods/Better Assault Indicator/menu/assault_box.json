@@ -1,0 +1,197 @@
+{
+    "menu_id": "bai_assault_box_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_assault_box",
+    "items": [
+        {
+            "table" : [
+                {
+                    "type": "color_select",
+                    "id": "bai_assault_color_select_choice",
+                    "title": "bai_assault_box",
+                    "description": "",
+                    "value": "assault",
+                    "default_value": [255, 255, 0],
+                    "callback": "SetNormalColor",
+                    "callback_arguments": "assault",
+                    "texture": "assault"
+                },
+                {
+                    "type": "color_select",
+                    "id": "bai_assault_mutated_color_select_choice",
+                    "title": "bai_assault_box_mutated",
+                    "description": "",
+                    "value": "assault_mutated",
+                    "default_value": [211, 133, 255],
+                    "callback": "SetNormalColor",
+                    "callback_arguments": "assault_mutated",
+                    "texture": "assault"
+                }
+            ]
+        },
+        {
+            "table" : [
+                {
+                    "type": "color_select",
+                    "id": "bai_captain_color_select_choice",
+                    "title": "bai_captain_box",
+                    "description": "",
+                    "value": "captain",
+                    "default_value": [255, 128, 0],
+                    "callback": "SetNormalColor",
+                    "callback_arguments": "captain",
+                    "texture": "padlock"
+                },
+                {
+                    "type": "color_select",
+                    "id": "bai_captain_color_mutated_select_choice",
+                    "title": "bai_captain_box_mutated",
+                    "description": "",
+                    "value": "captain_mutated",
+                    "default_value": [255, 133, 225],
+                    "callback": "SetNormalColor",
+                    "callback_arguments": "captain_mutated",
+                    "texture": "padlock"
+                }
+            ]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_holdout_color_select_choice",
+            "title" : "bai_holdout_box",
+            "description" : "",
+            "value" : "holdout",
+            "default_value" : [255, 85, 30],
+            "callback" : "SetNormalColor",
+            "callback_arguments" : "holdout",
+            "texture" : "assault"
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_assault_box",
+            "center" : true
+        },
+        {
+            "type": "toggle",
+            "id": "bai_hide_hostage_panel_during_assault_choice",
+            "title": "bai_hide_hostage_panel",
+            "description": "bai_hide_hostage_panel_assault_desc",
+            "callback": "HideHostagePanel",
+            "callback_arguments": "assault",
+            "value": "hide_hostage_panel",
+            "default_value": false
+        },
+        {
+            "type": "divider",
+            "size": 16
+        },
+        {
+            "table" : [
+                {
+                    "type": "label",
+                    "id": "assault",
+                    "title": "bai_custom_text"
+                },
+                {
+                    "type": "label",
+                    "title": "bai_custom_text_short"
+                }
+            ]
+        },
+        {
+            "table" : [
+                {
+                    "type": "button",
+                    "id": "bai_custom_text_difficulty_choice",
+                    "title": "bai_custom_text_difficulty",
+                    "description": "bai_custom_text_difficulty_desc",
+                    "next_menu": "bai_assault_box_custom_text_difficulty_menu"
+                },
+                {
+                    "type": "button",
+                    "id": "bai_short_custom_text_difficulty_choice",
+                    "title": "bai_custom_text_difficulty",
+                    "description": "bai_custom_text_difficulty_desc",
+                    "next_menu": "bai_assault_box_custom_text_short_difficulty_menu"
+                }
+            ]
+        },
+        {
+            "table" : [
+                {
+                    "type": "button",
+                    "id": "bai_custom_text_faction_choice",
+                    "title": "bai_custom_text_faction",
+                    "description": "bai_custom_text_faction_desc",
+                    "next_menu": "bai_assault_box_custom_text_faction_menu"
+                },
+                {
+                    "type": "button",
+                    "id": "bai_short_custom_text_faction_choice",
+                    "title": "bai_custom_text_faction",
+                    "description": "bai_custom_text_faction_desc",
+                    "next_menu": "bai_assault_box_custom_text_short_faction_menu"
+                }
+            ]
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_captain_box",
+            "center" : true
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_hide_hostage_panel_during_captain_choice",
+            "title" : "bai_hide_hostage_panel",
+            "description" : "bai_hide_hostage_panel_captain_desc",
+            "callback" : "HideHostagePanel",
+            "callback_arguments" : "captain",
+            "value" : "hide_hostage_panel",
+            "default_value" : true
+        },
+        {
+            "type" : "divider",
+            "size" : 16
+        },
+        {
+            "type" : "label",
+            "title" : "bai_custom_text"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_captain_box_custom_text_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : "captain",
+            "value" : "custom_text",
+            "default_value" : ""
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_custom_text_short"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_captain_box_custom_text_short_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_short_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : "captain",
+            "value" : "short_custom_text",
+            "default_value" : ""
+        }
+    ]
+}

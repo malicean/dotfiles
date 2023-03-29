@@ -1,0 +1,16 @@
+{
+	"mrk_options_menu_title" : "Marking",
+	"mrk_options_menu_desc"  : "",
+
+	"mrk_options_mark_aim_title" : "Marcar o que está na mira",
+	"mrk_options_mark_aim_desc" : "Escolhe os alvos apenas pelo ângulo (ignora distância).\nÉ nescessário reiniciar a heist para que essa opção tenha efeito.",
+
+	"mrk_options_ignore_disabled_cams_title" : "Previnir a marcação das câmeras desativadas",
+	"mrk_options_ignore_disabled_cams_desc" : "Se o operador das câmeras estiver morto, câmeras serão ignoradas pelo sistema de marcação.",
+
+	"mrk_options_disable_sentry_switch_mode_title" : "Desativar modo de disparo da Sentry Gun",
+	"mrk_options_disable_sentry_switch_mode_desc" : "Desativa a interação de mudar o modo de disparo da Sentry Gun.",
+
+	"mrk_options_prioritize_intimidated_title" : "Dar maior prioridade para guardas rendidos",
+	"mrk_options_prioritize_intimidated_desc" : "Policiais que ainda não foram totalmente capturados recebem um bônus de prioridade da ação.\nEssa opção não tem efeito se Marcar-o-que-está-na-mira estiver ativado."
+}

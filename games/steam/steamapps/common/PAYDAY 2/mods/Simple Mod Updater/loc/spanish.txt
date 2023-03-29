@@ -1,0 +1,16 @@
+{
+	"smu_x_mods_disabled" : "$x mods desactivados",
+	"smu_already_downloaded_ready_to_install" : "Archivo ya descargado y listo para instalar",
+	"smu_changelog_title" : "Notas del parche de $mod_name",
+	"smu_changelog_close" : "Cerrar",
+	"smu_autoinstall_mod_update" : "Instalación de nueva actualización en curso...",
+	"smu_autoinstall_mod_download_complete" : "¡Descargar completa!\nHaga clic aquí para ver las notas del parche.",
+
+	"smu_options_menu_title" : "Simple Mod Updater",
+	"smu_options_menu_desc" : "Este mod descarga e instala actualizaciones de mods automáticamente. También admite dependencias.\nTodos los mods de TdlQ usan este sistema.",
+
+	"smu_options_auto_install_title" : "Instalación automática",
+	"smu_options_auto_install_desc" : "",
+	"smu_options_notify_about_disabled_mods_title" : "Notificar sobre mods desactivados",
+	"smu_options_notify_about_disabled_mods_desc" : ""
+}

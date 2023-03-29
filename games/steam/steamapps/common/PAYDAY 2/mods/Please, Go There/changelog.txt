@@ -1,0 +1,88 @@
+Revision 32:
+- added a check to prevent a crash when civilian logic goes south for some unknown reason
+
+Revision 31:
+- fixed dependencies in mod.txt
+
+Revision 30:
+- changed update system to Simple Mod Updater
+
+Revision 29:
+- fixed a crash caused by "interrupt interaction" signal sent when a player dies
+
+Revision 28:
+- prevent unresolvable waypoint destination to wipe destination parameter
+
+Revision 27:
+- changed how controls work: "shout" to call, "stop ai" to send to waypoint or stop immediately
+
+Revision 26:
+- fixed speed issues with civs sent to a waypoint
+
+Revision 25:
+- applied Iter's following technique used for bots to civilians
+
+Revision 24:
+- disabled vanilla CivilianLogicTravel._optimize_path() because https://youtu.be/FMhbwqYkUDE
+- fixed coarse paths being ignored
+
+Revision 23:
+- improved ability to follow, see https://youtu.be/KubM9_xnm-8
+
+Revision 22:
+- removed Announcer
+
+Revision 21:
+- added code to prevent multiple mod loading
+
+Revision 20:
+- always use "move" voice commands when directing an hostage to a waypoint
+
+Revision 19:
+- fixed mod.txt dependencies section
+
+Revision 18:
+- even more absolutely essential BLT2 integration
+
+Revision 17:
+- more absolutely essential BLT2 integration
+
+Revision 16:
+- BLT2
+
+Revision 15:
+- added Goonmod's Custom Waypoints as a dependency
+
+Revision 14:
+- fixed a vanilla bug: civilians can't be tied after being stunned by a concussion grenade
+- fixed another vanilla bug: a moved civilian hostage will correctly lie down when stunned by a concussion grenade
+
+Revision 13:
+- fixed long paths
+
+Revision 12:
+- fixed coarse path receiving the wrong segment destination in parameters
+
+Revision 11:
+- fixed civilian hostages seen as untied by clients after being moved with the help of a waypoint
+
+Revision 10:
+- changed the behavior of moved hostages: they will now sit down from cop proximity and noise made by cops (and gunshots from a player having Stockholm Syndrome will make them stand longer)
+
+Revision 9:
+- improved auto lying down when destination is reached
+
+Revision 8:
+- removed GoonMod as a mandatory library
+
+Revision 7:
+- compatibility compliance with upcoming version of Announcer
+
+Revision 6:
+- switched announcement code to library Announcer
+
+Revision 5:
+- updated to U107
+
+Revision 4:
+- reworked the announce so it tells about all gameplay changing mods in only one chat message

@@ -1,0 +1,261 @@
+{
+    "bai_mod_title" : "Better Assault Indicator",
+    "bai_mod_desc" : "Impostazioni della mod",
+
+    "bai_menu_next_page" : "Pagina successiva",
+    "bai_menu_previous_page" : "Pagina precedente",
+
+    "bai_enabled" : "Attivo",
+    "bai_disabled" : "Disabilitato:",
+
+    "bai_compatible_huds" : "Il valore '$VALUE' è compatibile con:\n",
+    "bai_compatible_huds_option" : "L'opzione è compatibile con:\n",
+    "bai_incompatible_huds" : "Il valore '$VALUE' non è compatibile con:\n",
+    "bai_incompatible_huds_option" : "L'opzione non è compatibile con:\n",
+    "bai_default_option" : "Se hai diversi HUD installati, questa opzione avrà il valore di default:\n'$VALUE'",
+
+    "bai_language" : "Lingua",
+    "bai_language_desc" : "Cambia la lingua della mod. È necessario un caricamento per rendere effettive le modifiche.",
+    "bai_language_1" : "Rileva automaticamente",
+
+    "bai_compatibility" : "Compatibilità HUD",
+    "bai_compatibility_desc" : "Seleziona un altro HUD che stai utilizzando per renderlo compatibile con BAI.\nIl gioco potrebbe crashare se selezioni un HUD che non hai installato!\n\n[Autorilevamento: BAI proverà a rilevare l'HUD installato automaticamente]\n[Altre opzioni: Forza BAI a caricare il codice di compatibilità per quell'HUD]",
+    "bai_compatibility_1" : "Rileva",
+    "bai_compatibility_2" : "Vanilla",
+
+    "bai_holoui_desc" : "Applica le impostazioni specifiche di BAI a HoloUI",
+    "bai_holoui_update_text_color" : "Aggiorna colore testo",
+    "bai_holoui_update_text_color_desc" : "Aggiorna anche il colore del testo quando viene aggiornato il colore della barra d'assalto",
+
+    "bai_pdth_hud_reborn_desc" : "Modifica delle impostazioni specifiche della mod PD:TH HUD Reborn",
+    "bai_pdth_hud_reborn_custom_text_color" : "Usa colore del testo personalizzato",
+    "bai_pdth_hud_reborn_custom_text_color_desc" : "Se disabilitato, il gioco userà il colore dell'icona per colorare il testo",
+
+    "bai_restoration_mod_desc" : "Applica delle impostazioni specifiche di BAI a Restoration Mod",
+    "bai_restoration_mod_alpha_tape_only" : "Solo indicatore dell'alpha",
+    "bai_restoration_mod_alpha_tape_only_desc" : "Queste impostazioni modificano solo l'indicatore alpha di Restoration Mod",
+    "bai_restoration_mod_include_cover_text" : "Includi 'Stai al sicuro'",
+    "bai_restoration_mod_include_cover_text_desc" : "Includi la stringa 'STAI AL SICURO' nell'indicatore dell'assalto",
+    "bai_restoration_mod_use_alpha_assault_text" : "Usa testo accorciato (Assalto)",
+    "bai_restoration_mod_use_alpha_assault_text_desc" : "Utilizza la versione più corta del testo 'ASSALTO DELLA POLIZIA IN CORSO'",
+    "bai_restoration_mod_use_alpha_endless_text" : "Usa testo accorciato (Assalto infito)",
+    "bai_restoration_mod_use_alpha_endless_text_desc" : "Utilizza la versione più corta del testo 'ASSALTO DELLA POLIZIA INFINITO IN CORSO'",
+    "bai_restoration_mod_early_alpha_corner_only" : "Solo angoli dell'alpha",
+    "bai_restoration_mod_early_alpha_corner_only_desc" : "Queste impostazioni modificano solo gli angoli alpha di Restoration Mod",
+    "bai_c1" : "C1",
+    "bai_c2" : "C2",
+
+    "bai_halo_reach_hud": "Opzioni Halo: Reach HUD",
+    "bai_halo_reach_hud_desc": "Modifica delle impostazioni specifiche della mod Halo: Reach HUD",
+    "bai_halo_reach_hud_use_bai_color": "Usa colori di BAI",
+    "bai_halo_reach_hud_use_bai_color_desc": "Se attivo, l'indicatore dell'assalto userà i colori di BAI invece che quelli di default",
+
+    "bai_button_ok" : "OK",
+    "bai_detected_wolfhud" : "Rilevata incompatibilità con WolfHUD",
+    "bai_detected_wolfhud_desc" : "L'opzione di WolfHUD 'Indicatore assalto avanzato' non è compatibile con BAI ed è stata disabilitata automaticamente.\nSarà possibile modificare l'indicatore tramite le opzioni 'Indicatore avanzato assalto' e 'Stati dell'assalto' di BAI.",
+    "bai_detected_assault_states" : "Rilevata incompatibilità con 'Assault States mod'",
+    "bai_detected_assault_states_desc" : "'Assault States mod' è incompatibile con BAI. BAI può già mostrare gli stati dell'assalto. È consigliato rimuovere o disabilitare 'Assault States mod'.",
+    "bai_detected_wave_survived" : "Rilevata incompatibilità con 'Wave Survived mod'",
+    "bai_detected_wave_survived_desc" : "'Wave Survived mod' è incompatibile con BAI. BAI può già mostrare il banner di ondata superata. È consigliato rimuovere o disabilitare 'Wave Survived mod'.",
+ 
+    "bai_savedata_not_compatible" : "Impostazioni salvate non compatibili con questa versione di BAI",
+    "bai_savedata_not_compatible_desc" : "Sembra che BAI sia stato aggiornato e abbia reso le tue impostazioni salvate incompatibili. È un peccato che non possa caricare le tue impostazioni, ma almeno ho ricaricato le impostazioni di default così non crasherai.\n\nMi scuso per ogni inconveniente.",
+    
+    "bai_show_wave_survived" : "Mostra banner 'Ondata superata'",
+    "bai_show_wave_survived_desc" : "Mostra il banner 'Ondata superata' ogni volta che sopravvivi ad un assalto\n(viene normalmente mostrato solo nell'irruzione al rifugio)",
+   
+    "bai_hide_hostage_panel" : "Nascondi pannello ostaggi",
+    "bai_hide_hostage_panel_assault_desc" : "Nascondi il pannello degli ostaggi durante i normali assalti",
+    "bai_hide_hostage_panel_captain_desc" : "Nascondi il pannello degli ostaggi quanto il Capitano è presente",
+    "bai_hide_hostage_panel_endless_desc" : "Nascondi il pannello degli ostaggi durante gli assalti infiniti",
+    
+    "bai_completely_hide_hostage_panel" : "Nascondi completamente ostaggi",
+    "bai_completely_hide_hostage_panel_desc" : "Il pannello degli ostaggi non sarà visibile quando inizi una missione\nQuesta impostazione ignora le altre impostazioni che lo nascondono",
+ 
+    "bai_show_difficulty_name_instead_of_skulls" : "Nome difficoltà invece dei teschi",
+    "bai_show_difficulty_name_instead_of_skulls_desc" : "Mostra il nome della difficoltà invece dei teschi nell'indicatore dell'assalto\nNon applicabile nelle Serie Criminali",
+ 
+    "bai_host_only" : "Solo Host",
+    "bai_client_only" : "Solo Client",
+ 
+    "bai_r" : "Rosso",
+    "bai_r_desc" : "Imposta il valore rosso del colore",
+    "bai_g" : "Verde",
+    "bai_g_desc" : "Imposta il valore verde del colore",
+    "bai_b" : "Blu",
+    "bai_b_desc" : "Imposta il valore blu del colore",
+ 
+    "bai_color": "Colori",
+    "bai_color_desc": "Cambia il colore dell'indicatore",
+ 
+    "bai_assault_box" : "Assalto",
+    "bai_assault_box_desc" : "Cambia il colore dell'indicatore durante un assalto",
+ 
+    "bai_assault_box_mutated" : "Assalto (Mutatori attivi)",
+    "bai_assault_box_mutated_desc" : "Cambia il colore dell'indicatore durante un assalto in una partita con mutatori attivi",
+ 
+    "bai_captain_box" : "Assalto (Capitano)",
+    "bai_captain_box_desc" : "Cambia il colore dell'indicatore durante un assalto quando il Capitano è presente",
+
+    "bai_holdout_box" : "Assalto (Holdout)",
+    "bai_holdout_box_desc" : "Cambia il colore dell'indicatore durante un assalto in modalità Holdout",
+
+    "bai_captain_box_mutated" : "Assalto (Capitano, Mutatori attivi)",
+    "bai_captain_box_mutated_desc" : "Cambia il colore dell'indicatore durante un assalto in una partita con mutatori attivi quando il Capitano è presente",
+ 
+    "bai_endless_box": "Assalto Infinito",
+    "bai_endless_box_desc": "Cambia il colore dell'indicatore durante un assalto infinito",
+ 
+    "bai_endless_box_mutated": "Assalto Infinito (Mutatori attivi)",
+    "bai_endless_box_mutated_desc": "Cambia il colore dell'indicatore durante un assalto infinito in una partita con mutatori attivi",
+ 
+    "bai_survived_box": "Ondata superata",
+    "bai_survived_box_desc": "Cambia il colore dell'indicatore dopo essere sopravvissuti ad un assalto\n(Verrà inoltre applicato nell'indicatore durante le irruzioni al rifugio)",
+ 
+    "bai_escape_box" : "Punto di non ritorno",
+    "bai_escape_box_desc": "Cambia il colore dell'indicatore del punto di non ritorno (Missione fallita tra...)",
+ 
+    "bai_color_reset" : "Reimposta colore",
+    "bai_color_reset_desc" : "Reimposta il colore al suo valore di default",
+    "bai_colors_reset" : "Reimposta colori",
+    "bai_colors_reset_desc" : "Reimposta i colori con i valori di default del gioco",
+ 
+    "bai_show_assault_states" : "Mostra stati dell'assalto",
+    "bai_show_assault_states_desc" : "Mostra gli stati dell'assalto (controllo, anticipazione, preparazione, attacco e ritirata)\nQuesta opzione non funzionerà con gli assalti infiniti oppure se il Capitano è presente nel livello",
+ 
+    "bai_assault_states" : "Stati dell'assalto",
+    "bai_assault_states_desc" : "Cambia il colore e la visibilità di ogni singolo stato dell'assalto",
+
+    "bai_enabled_not_assault_desc" : "Se attivo, verranno mostrati gli stati dell'assalto quando un assalto non è in corso\nAltrimenti l'indicatore verrà nascosto",
+    "bai_enabled_assault_desc" : "Se attivo, verranno mostrati gli stati dell'assalto durante gli assalti\nAltrimenti verrà mostrato il normale indicatore di assalto",
+    
+    "bai_show_advanced_assault_info" : "Mostra informazioni assalto avanzate",
+    "bai_show_advanced_assault_info_desc" : "Mostra i rinforzi rimasti e il tempo rimasto nella barra dell'assalto\nQueste informazioni non sono visibili durante gli assalti infiniti e quando il capitano è presente",
+
+    "bai_advanced_assault_info" : "Informazioni assalto avanzate",
+    "bai_advanced_assault_info_desc" : "Modifica le impostazioni avanzate dell'assalto.",    
+
+    "bai_show_time_left" : "Mostra 'Tempo rimanente'",
+    "bai_show_time_left_desc" : "Mostra l'informazione 'Tempo rimanente' nella barra dell'assalto.\nQuesta informazione non sarà accurata appena entrato in una partita, ma lo diventerà nel corso della partita.",
+
+    "bai_time_format" : "Formato tempo",
+    "bai_time_format_desc" : "Cambia il formato del tempo mostrato con l'informazione 'Tempo rimasto' dell'assalto\n\nEsempio:",
+    "bai_time_format_1" : "xx.xx (in s)",
+    "bai_time_format_2" : "'xx.xx' s",
+    "bai_time_format_3" : "xx (in s)",
+    "bai_time_format_4" : "'xx' s",
+    "bai_time_format_5" : "'xx' min 'yy' s",
+    "bai_time_format_6" : "xx:yy",
+
+    "bai_show_spawns_left" : "Mostra 'Rinforzi rimanenti'",
+    "bai_show_spawns_left_desc" : "Mostra l'informazione 'Rinforzi rimanenti' nella barra dell'assalto.\nQuesta informazione non sarà accurata appena entrato in una partita, ma lo diventerà nel corso della partita.",
+
+    "bai_aai_panel" : "Stile pannello",
+    "bai_aai_panel_desc" : "Imposta il pannello delle informazioni dell'assalto avanzate",
+    "bai_aai_panel_1" : "Nella barra di assalto",
+    "bai_aai_panel_2" : "Pannello personalizzato",
+
+    "bai_show_captain_panel" : "Mostra pannello buff di riduzione danno",
+    "bai_show_captain_panel_desc" : "Mostra il pannello buff di riduzione danno quando il capitano è presente",
+
+    "bai_text_desc" : "Scrivi il tuo testo personalizzato (Nessuna restrizione sulla lunghezza)",
+
+    "bai_text_short_desc" : "Alcuni HUD hanno un indicatore dell'assalto ridotto e perciò utilizzano stringhe più corte. Scrivi il tuo testo personalizzato (Più corto possibile)",
+    "bai_custom_text" : "Testo personalizzato",
+    "bai_custom_text_desc" : "Scrivi qui il tuo testo personalizzato",
+
+    "bai_faction_assault_text" : "Mostra nome fazione nella barra d'assalto",
+    "bai_faction_assault_text_desc" : "Mostra il nome della fazione durante un assalto nella barra d'assalto\n'Testo personalizzato' sovrascrive questa impostazione. Non applicabile nelle Serie Criminali",
+
+    "bai_assault_panel_position" : "Posizione indicatore assalto",
+    "bai_assault_panel_position_desc" : "Imposta la posizione dell'indicatore dell'assalto sullo schermo",
+
+    "bai_animations" : "Animazioni",
+    "bai_animations_desc" : "Cambia come le animazioni si comportano nel gioco",
+
+    "bai_enable_animations" : "Attiva animazioni",
+    "bai_enable_animations_desc" : "Quando disattivato, tutte le animazioni saranno istantanee (comportamento di default)",
+
+    "bai_normal" : "Normale",
+    "bai_hard" : "Difficile",
+    "bai_very_hard" : "Molto difficile",
+    "bai_overkill" : "OVERKILL",
+    "bai_mayhem" : "Distruzione",
+    "bai_death_wish" : "Apocalisse",
+    "bai_death_sentence" : "Sentenza di morte",
+    
+    "hud_assault_alpha_fss_mod_1" : "SUICIDA",
+    "hud_assault_alpha_fss_mod_2" : "MASOCHISMO",
+    "hud_assault_alpha_fss_mod_3" : "MASOCHISTA?",
+    "hud_assault_alpha" : "ASSALTO DELLA POLIZIA",
+    "hud_assault_alpha_gensec" : "ASSALTO SWAT GENSEC",
+    "hud_assault_alpha_zeal" : "ASSALTO SWAT ZEAL",
+    "hud_assault_alpha_fbi" : "ASSALTO SWAT FBI",
+    "hud_assault_alpha_murkywater" : "MISSIONE MURKYWATER",
+    "hud_assault_alpha_russia" : "ASSALTO RUSSO",
+    "hud_assault_alpha_federales" : "ASSALTO DEI FEDERALI",
+    "hud_assault_assault_fss_mod_1" : "SUICIDIO IN CORSO",
+    "hud_assault_assault_fss_mod_2" : "MASOCHISMO IN CORSO",
+    "hud_assault_assault_fss_mod_3" : "SEI UN MASOCHISTA?",
+    "hud_assault_assault_gensec_default" : "ASSALTO SWAT GENSEC IN CORSO",
+    "hud_assault_assault_zeal_default" : "ASSALTO SWAT ZEAL IN CORSO",
+    "hud_assault_assault_fbi_default" : "ASSALTO SWAT FBI IN CORSO",
+    "hud_assault_assault_murkywater_default" : "MISSIONE MURKYWATER IN CORSO",
+    "hud_assault_assault_russia_default" : "ASSALTO RUSSO IN CORSO",
+    "hud_assault_assault_zombie_default": "IL LAVORO SENZA GIOIA FA DI WOLF UNA NOIA",
+    "hud_assault_assault_federales_default" : "ASSALTO DEI FEDERALI IN CORSO",
+    "hud_assault_survived_fss_mod_1" : "SOPRAVISSUTO AL SUICIDIO",
+    "hud_assault_survived_fss_mod_2" : "SOPRAVISSUTO AL MASOCHISMO",
+    "hud_assault_survived_fss_mod_3" : "MASOCHISTA CONFERMATO",
+    "hud_assault_endless_default" : "ASSALTO DELLA POLIZIA INFINITO IN CORSO",
+    "hud_assault_endless_fss_mod_1" : "SUICIDIO INFINITO IN CORSO",
+    "hud_assault_endless_fss_mod_2" : "MASOCHISMO INFINITO IN CORSO",
+    "hud_assault_endless_fss_mod_3" : "SEI VERAMENTE UN MASOCHISTA",
+    "hud_assault_endless_gensec_default": "ASSALTO SWAT GENSEC INFINITO IN CORSO",
+    "hud_assault_endless_zeal_default" : "ASSALTO SWAT ZEAL INFINITO IN CORSO",
+    "hud_assault_endless_fbi_default" : "ASSALTO SWAT FBI INFINITO IN CORSO",
+    "hud_assault_endless_zombie_default" : "IL LAVORO SENZA GIOIA FA DI WOLF UNA NOIA",
+    "hud_assault_endless_murkywater_default" : "MISSIONE MURKYWATER INFINITA IN CORSO",
+    "hud_assault_endless_russia_default" : "ASSALTO RUSSO INFINITO IN CORSO",
+    "hud_assault_endless_federales_default" : "ASSALTO DEI FEDERALI INFINITO IN CORSO",
+    "hud_assault_endless_alpha" : "ASSALTO DELLA POLIZIA INFINITO",
+    "hud_assault_endless_alpha_fss_mod_1" : "SUICIDIO INFINITO",
+    "hud_assault_endless_alpha_fss_mod_2" : "MASOCHISMO INFINITO",
+    "hud_assault_endless_alpha_fss_mod_3" : "VERAMENTE UN MASOCHISTA",
+    "hud_assault_endless_alpha_gensec" : "ASSALTO SWAT GENSEC INFINITO",
+    "hud_assault_endless_alpha_zeal" : "ASSALTO SWAT ZEAL INFINITO",
+    "hud_assault_endless_alpha_fbi" : "ASSALTO SWAT FBI INFINITO",
+    "hud_assault_endless_alpha_murkywater" : "MISSIONE MURKYWATER INFINITA",
+    "hud_assault_endless_alpha_zombie" : "IL LAVORO SENZA GIOIA FA DI WOLF UNA NOIA",
+    "hud_assault_endless_alpha_russia" : "ASSALTO RUSSO INFINITO",
+    "hud_assault_endless_alpha_federales" : "ASSALTO DEI FEDERALI INFINITO",
+    "hud_assault_survived_endless" : "ASSALTO INFINITO SOPRAVVISSUTO",
+    "hud_assault_survived_endless_fss_mod_1" : "SOPRAVISSUTO A SUICIDIO INFINITO",
+    "hud_assault_survived_endless_fss_mod_2" : "SOPRAVISSUTO A MASOCHISMO INFINITO",
+    "hud_assault_survived_endless_fss_mod_3" : "MASOCHISTA INFINITO CONFERMATO",
+    "hud_cover" : "STAI AL SICURO",
+
+    "hud_control_default" : "Controllo",
+    "hud_anticipation_default" : "Anticipazione",
+    "hud_build_default" : "Preparazione",
+    "hud_sustain_default" : "Assalto",
+    "hud_fade_default" : "Ritirata",
+
+    "hud_overdue" : "Ritardo",
+    "hud_time_left" : "Tempo rimasto: ",
+    "hud_time_left_short" : "Tempo: ",
+    "hud_spawns_left" : "Rinforzi rimasti: ",
+    "hud_spawns_left_short" : "Rinforzi: ",
+    "hud_min" : "min",
+    "hud_s" : "s",
+
+    "hud_assault_default" : "Assalto",
+    "hud_endless_default" : "Infinito",
+    "hud_captain_default" : "Capitano",
+    "hud_captain_active" : "Completamente Assemblato",
+    "hud_survived_default" : "Sopravvissuto",
+    "hud_fss_mod_1" : "Suicida",
+    "hud_fss_mod_2" : "Masochismo",
+    "hud_fss_mod_3" : "Masochista?",
+    "hud_no_return" : "Punto di non ritorno"
+}

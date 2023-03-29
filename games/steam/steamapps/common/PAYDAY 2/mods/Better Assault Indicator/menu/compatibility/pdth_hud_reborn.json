@@ -1,0 +1,29 @@
+{
+    "menu_id": "bai_pdth_hud_reborn_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_compatibility_7",
+    "h" : 300,
+    "items": [
+        {
+            "type" : "toggle",
+            "id" : "bai_pdth_hud_reborn_custom_text_color_choice",
+            "title" : "bai_pdth_hud_reborn_custom_text_color",
+            "description" : "bai_pdth_hud_reborn_custom_text_color_desc",
+            "callback" : "callback_bai_pdth_hud_reborn_custom_text_color",
+            "value" : "custom_text_color",
+            "is_parent" : true,
+            "default_value" : false
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_pdth_hud_reborn_color_select_choice",
+            "title" : "",
+            "description" : "",
+            "value" : "color",
+            "hud_value" : "pdth_hud_reborn",
+            "default_value" : [0, 0, 0],
+            "callback" : "callback_bai_pdth_hud_reborn_text_box",
+            "parent" : "bai_pdth_hud_reborn_custom_text_color_choice"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name" : "PocoHud3",
+    "description" : "Payday 2 Interface Enhancer Mod",
+    "author" : "zenyr\n              Fixes by:\n              andole\n              Dom\n              sc",
+    "contact" : "https://steamcommunity.com/app/218620/discussions/15/2980781849379353493/",
+    "version" : "based on v0.35 (r467) - 2023.02.16",
+    "blt_version" : 2.0,
+    "color" : "0 0 0.3",
+    "image" : "logo.png",
+    "persist_scripts" : [
+        { "global" : "UNDERSCORE", "script_path" : "poco/common.lua" },
+        { "global" : "PocoHud3", "script_path" : "poco/Hud3.lua" }
+    ],
+    "updates" :
+    [
+        {
+            "identifier" : "PocoHUD3",
+            "host":
+            {
+                "meta": "https://www.dropbox.com/s/9rjhwu9qejkmt0e/meta.json?raw=1"
+            }
+        }
+    ]
+}

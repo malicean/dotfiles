@@ -1,0 +1,36 @@
+{
+    "menu_id": "bai_restoration_mod_endless_box_menu",
+    "parent_menu" : "bai_restoration_mod_menu",
+    "title" : "bai_endless_box",
+    "h" : 500,
+    "items": [
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_endless_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "endless",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [255, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["endless", "c1"]
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_endless_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "endless",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["endless", "c2"]
+        }
+    ]
+}

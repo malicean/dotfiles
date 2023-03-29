@@ -1,0 +1,392 @@
+{
+    "mod_language" : 1,
+    "hud_compatibility" : 1,
+    "hudlist_compatibility" : 2,
+    "show_wave_survived" : false,
+    "completely_hide_hostage_panel" : false,
+    "show_advanced_assault_info" : false,
+    "show_difficulty_name_instead_of_skulls" : false,
+    "show_assault_states" : false,
+    "hide_assault_text" : false,
+    "faction_assault_text" : false,
+    "assault_panel_position" : 3,
+    "wave_counter": 1,
+    "assault_panel" :
+    {
+        "assault" : 
+        {
+            "r" : 255,
+            "g" : 255,
+            "b" : 0,
+            "hide_hostage_panel" : false,
+            "custom_text" :
+            {
+                "normal" : "",
+                "hard" : "",
+                "overkill" : "",
+                "overkill_145" : "",
+                "easy_wish" : "",
+                "overkill_290" : "",
+                "sm_wish" : "",
+                "swat" : "",
+                "fbi" : "",
+                "gensec" : "",
+                "zeal" : "",
+                "russia" : "",
+                "zombie" : "",
+                "murkywater" : "",
+                "federales" : ""
+            },
+            "short_custom_text" :
+            {
+                "normal" : "",
+                "hard" : "",
+                "overkill" : "",
+                "overkill_145" : "",
+                "easy_wish" : "",
+                "overkill_290" : "",
+                "sm_wish" : "",
+                "swat" : "",
+                "fbi" : "",
+                "gensec" : "",
+                "zeal" : "",
+                "russia" : "",
+                "zombie" : "",
+                "murkywater" : "",
+                "federales" : ""
+            }
+        },
+        "assault_mutated" :
+        {
+            "r" : 211,
+            "g" : 133,
+            "b" : 255
+        },
+        "captain" :
+        {
+            "r" : 255,
+            "g" : 128,
+            "b" : 0,
+            "hide_hostage_panel" : true,
+            "custom_text" : "",
+            "short_custom_text" : ""
+        },
+        "captain_mutated" :
+        {
+            "r" : 255,
+            "g" : 133,
+            "b" : 225
+        },
+        "endless" :
+        {
+            "r" : 255,
+            "g" : 0,
+            "b" : 0,
+            "hide_hostage_panel" : true,
+            "custom_text" :
+            {
+                "normal" : "",
+                "hard" : "",
+                "overkill" : "",
+                "overkill_145" : "",
+                "easy_wish" : "",
+                "overkill_290" : "",
+                "sm_wish" : "",
+                "swat" : "",
+                "fbi" : "",
+                "gensec" : "",
+                "zeal" : "",
+                "russia" : "",
+                "zombie" : "",
+                "murkywater" : "",
+                "federales" : ""
+            },
+            "short_custom_text" :
+            {
+                "normal" : "",
+                "hard" : "",
+                "overkill" : "",
+                "overkill_145" : "",
+                "easy_wish" : "",
+                "overkill_290" : "",
+                "sm_wish" : "",
+                "swat" : "",
+                "fbi" : "",
+                "gensec" : "",
+                "zeal" : "",
+                "russia" : "",
+                "zombie" : "",
+                "murkywater" : "",
+                "federales" : ""
+            }
+        },
+        "endless_mutated" :
+        {
+            "r" : 106,
+            "g" : 67,
+            "b" : 255
+        },
+        "survived" :
+        {
+            "r" : 32,
+            "g" : 230,
+            "b" : 32,
+            "custom_text" : "",
+            "short_custom_text" : ""
+        },
+        "escape" :
+        {
+            "r" : 255,
+            "g" : 0,
+            "b" : 0,
+            "custom_text" : ""
+        },
+        "holdout" :
+        {
+            "r" : 255,
+            "g" : 85,
+            "b" : 30
+        },
+        "control":
+        {
+            "r" : 255,
+            "g" : 255,
+            "b" : 255,
+            "enabled" : true,
+            "custom_text" : ""
+        },
+        "anticipation":
+        {
+            "r" : 186,
+            "g" : 204,
+            "b" : 28,
+            "enabled" : true,
+            "custom_text" : ""
+        },
+        "build":
+        {
+            "r" : 255,
+            "g" : 255,
+            "b" : 0,
+            "enabled" : true,
+            "custom_text" : ""
+        },
+        "sustain":
+        {
+            "r" : 237,
+            "g" : 127,
+            "b" : 127,
+            "enabled" : true,
+            "custom_text" : ""
+        },
+        "fade":
+        {
+            "r" : 0,
+            "g" : 255,
+            "b" : 255,
+            "enabled" : true,
+            "custom_text" : ""
+        }
+    },
+    "advanced_assault_info":
+    {
+        "show_time_left" : true,
+        "time_format" : 1,
+        "show_break_time_left" : true,
+        "show_spawns_left" : true,
+        "spawn_numbers" : 1,
+        "aai_panel" : 1,
+        "aai_panel_update_rate" : 0.5,
+        "captain_panel" : true
+    },
+    "animation":
+    {
+        "enable_animations" : true,
+        "animate_color_change" : true,
+        "animate_hostage_panel" : true
+    },
+    "hud":
+    {
+        "hudlist" :
+        {
+            "move_hudlist" : true
+        },
+        "holoui":
+        {
+            "update_text_color" : true
+        },
+        "pdth_hud_reborn":
+        {
+            "custom_text_color" : false,
+            "color":
+            {
+                "r" : 0,
+                "g" : 0,
+                "b" : 0
+            }
+        },
+        "restoration_mod":
+        {
+            "use_alpha_assault_text" : true,
+            "use_alpha_endless_text" : true,
+            "include_cover_text" : true,
+            "assault_panel":
+            {
+                "assault":
+                {
+                    "c1":
+                    {
+                        "r" : 255,
+                        "g" : 0,
+                        "b" : 0
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 255
+                    }
+                },
+                "captain":
+                {
+                    "c1":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 255
+                    },
+                    "c2":
+                    {
+                        "r" : 255,
+                        "g" : 255,
+                        "b" : 255
+                    }
+                },
+                "endless":
+                {
+                    "c1":
+                    {
+                        "r" : 255,
+                        "g" : 0,
+                        "b" : 0
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "survived":
+                {
+                    "c1":
+                    {
+                        "r" : 0,
+                        "g" : 255,
+                        "b" : 0
+                    },
+                    "c2":
+                    {
+                        "r" : 255,
+                        "g" : 204,
+                        "b" : 0
+                    }
+                },
+                "holdout":
+                {
+                    "c1":
+                    {
+                        "r" : 255,
+                        "g" : 85,
+                        "b" : 30
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "control":
+                {
+                    "c1":
+                    {
+                        "r" : 255,
+                        "g" : 255,
+                        "b" : 255
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "anticipation":
+                {
+                    "c1":
+                    {
+                        "r" : 186,
+                        "g" : 204,
+                        "b" : 28
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "build":
+                {
+                    "c1":
+                    {
+                        "r" : 255,
+                        "g" : 255,
+                        "b" : 0
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "sustain":
+                {
+                    "c1":
+                    {
+                        "r" : 237,
+                        "g" : 127,
+                        "b" : 127
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                },
+                "fade":
+                {
+                    "c1":
+                    {
+                        "r" : 0,
+                        "g" : 255,
+                        "b" : 255
+                    },
+                    "c2":
+                    {
+                        "r" : 0,
+                        "g" : 0,
+                        "b" : 0
+                    }
+                }
+            }
+        },
+        "halo_reach_hud" :
+        {
+            "use_bai_color" : true
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "menu_id": "bai_restoration_mod_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_compatibility_8",
+    "items": [
+        {
+            "type" : "label",
+            "title" : "bai_restoration_mod_alpha_tape_only"
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_restoration_mod_use_alpha_assault_text_choice",
+            "title" : "bai_restoration_mod_use_alpha_assault_text",
+            "description" : "bai_restoration_mod_use_alpha_assault_text_desc",
+            "callback" : "callback_bai_restoration_mod_use_alpha_assault_text",
+            "value" : "use_alpha_assault_text",
+            "default_value" : true
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_restoration_mod_use_alpha_endless_text_choice",
+            "title" : "bai_restoration_mod_use_alpha_endless_text",
+            "description" : "bai_restoration_mod_use_alpha_endless_text_desc",
+            "callback" : "callback_bai_restoration_mod_use_alpha_endless_text",
+            "value" : "use_alpha_endless_text",
+            "default_value" : true
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_restoration_mod_include_cover_text_choice",
+            "title" : "bai_restoration_mod_include_cover_text",
+            "description" : "bai_restoration_mod_include_cover_text_desc",
+            "callback" : "callback_bai_restoration_mod_include_cover_text",
+            "value" : "include_cover_text",
+            "default_value" : true
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_restoration_mod_early_alpha_corner_only"
+        },
+        {
+            "type" : "button",
+            "id" : "assault_box",
+            "title" : "bai_assault_box",
+            "description" : "bai_assault_box_desc",
+            "next_menu" : "bai_restoration_mod_assault_box_menu"
+        },
+        {
+            "type" : "button",
+            "id" : "endless_box",
+            "title" : "bai_endless_box",
+            "description" : "bai_endless_box_desc",
+            "next_menu" : "bai_restoration_mod_endless_box_menu"
+        },
+        {
+            "type" : "button",
+            "id" : "survived_box",
+            "title" : "bai_survived_box",
+            "description" : "bai_survived_box_desc",
+            "next_menu" : "bai_restoration_mod_survived_box_menu"
+        },
+        {
+            "type" : "button",
+            "id" : "assault_states",
+            "title" : "bai_assault_states",
+            "description" : "bai_assault_states_desc",
+            "next_menu" : "bai_restoration_mod_assault_states_menu"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"smu_x_mods_disabled" : "有$x个Mod未启用",
+	"smu_already_downloaded_ready_to_install" : "安装包已下载完毕，可以安装了",
+	"smu_changelog_title" : "$mod_name的更新日志",
+	"smu_changelog_close" : "关闭",
+	"smu_autoinstall_mod_update" : "更新正在进行中",
+	"smu_autoinstall_mod_download_complete" : "下载完毕！\n点这里查看更新日志。",
+ 
+	"smu_options_menu_title" : "TdlQ的模组更新工具",
+	"smu_options_menu_desc" : "",
+ 
+	"smu_options_auto_install_title" : "自动安装更新",
+	"smu_options_auto_install_desc" : "Mod有更新时会自动安装更新",
+	"smu_options_notify_about_disabled_mods_title" : "在BLT通知上显示未启用的Mod",
+	"smu_options_notify_about_disabled_mods_desc" : ""
+}

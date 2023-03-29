@@ -1,0 +1,32 @@
+{
+	"blt_version" : 2,
+	"name" : "Drag and Drop Inventory",
+	"description" : "To easily move your masks and weapons.",
+	"author" : "TdlQ",
+	"image" : "tdlq.dds",
+	"color" : "0.52 1 0",
+	"version" : "25",
+	"simple_update_url" : "http://pd2mods.z77.fr/update/DragDropInventory.zip",
+	"updates": [
+		{
+			"identifier" : "SimpleModUpdater",
+			"display_name" : "Simple Mod Updater",
+			"install_folder" : "Simple Mod Updater",
+			"host" : { "meta": "http://pd2mods.z77.fr/meta/SimpleModUpdater", }
+		}
+	],
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/blackmarketmanager",
+			"script_path" : "lua/blackmarketmanager.lua"
+		},
+		{
+			"hook_id" : "lib/managers/multiprofilemanager",
+			"script_path" : "lua/multiprofilemanager.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menu/blackmarketgui",
+			"script_path" : "lua/blackmarketgui.lua"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"cel_options_menu_desc" : "Este mod mejora la velocidad de fotogramas, principalmente al agregar portales y oclusores.",
+
+	"cel_options_max_active_occluders_nr_title" : "Cantidad máxima de oclusores activos",
+	"cel_options_max_active_occluders_nr_desc" : "Cantidad máxima de planos de oclusión activos al mismo tiempo.\nEl valor predeterminado es 50.",
+
+	"cel_options_map_change_generic_desc" : "Para más detalles, consulte $cel_url"
+}

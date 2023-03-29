@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<assets base_path="assets/" load="startup">
+    <group name="guis/textures/pd2_mod_bai/" path="assets/guis/textures/pd2_mod_bai/">
+        <file :name="menu_background.texture" :path="menu_background.texture"/>
+        <file :name="hud_corner.texture" :path="hud_corner.texture"/>
+        <file :name="check_bg.texture" :path="check_bg.texture"/>
+        <file :name="check.texture" :path="check.texture"/>
+
+        <file :name="spawns_left.texture" :path="spawns_left.texture"/>
+
+        <!-- Show Difficulty Name -->
+        <file :name="menu/difficulty_name_enabled.texture" :path="menu/difficulty_name_enabled.texture"/>
+        <file :name="menu/difficulty_name_disabled.texture" :path="menu/difficulty_name_disabled.texture"/>
+
+        <!-- AAI Panel Style -->
+        <file :name="menu/aai_panel_1.texture" :path="menu/aai_panel_1.texture"/>
+        <file :name="menu/aai_panel_2.texture" :path="menu/aai_panel_2.texture"/>
+
+        <!-- Captain Damage Reduction Buff Panel -->
+        <file :name="menu/captain_panel_enabled.texture" :path="menu/captain_panel_enabled.texture"/>
+        <file :name="menu/captain_panel_disabled.texture" :path="menu/captain_panel_disabled.texture"/>
+    </group>
+
+    <!-- Overrides game's textures -->
+    <group name="guis/textures/pd2/" path="assets/guis/textures/pd2_mod_bai/">
+        <file :name="hud_icon_assaultbox.texture" :path="hud_icon_assaultbox.texture"/>
+        <file :name="hud_icon_stealthbox.texture" :path="hud_icon_stealthbox.texture"/>
+        <file :name="hud_icon_noreturnbox.texture" :path="hud_icon_noreturnbox.texture"/>
+    </group>
+</assets>

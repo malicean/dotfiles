@@ -1,0 +1,36 @@
+{
+    "menu_id": "bai_restoration_mod_survived_box_menu",
+    "parent_menu" : "bai_restoration_mod_menu",
+    "title" : "bai_survived_box",
+    "h" : 500,
+    "items": [
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_survived_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "survived",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [0, 255, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["survived", "c1"]
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_survived_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "survived",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [255, 204, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["survived", "c2"]
+        }
+    ]
+}

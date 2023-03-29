@@ -1,0 +1,14 @@
+{
+	"menu_colorpicker_prompt_reset_palettes" : "RESET PALETTE SWATCHES\nDouble-click to reset your palette swatches to their default colors.",
+	"menu_colorpicker_prompt_close_accept" : "ACCEPT\nClick to confirm color choice and exit.\nYou can also press the \"A\" key.",
+	"menu_colorpicker_prompt_close_cancel" : "CANCEL\nClick to cancel color choice and exit.\nYou can also press the \"C\" key.",
+	"menu_colorpicker_prompt_gamut_box" : "GAMUT BOX\nClick and drag to select a color.",
+	"menu_colorpicker_prompt_default" : "\nHover over an object for more information.",
+	"menu_colorpicker_prompt_hue_slider" : "HUE SLIDER\nClick and drag to change hue.",
+	"menu_colorpicker_prompt_select_previous" : "PREVIOUS COLOR\nThe previous color choice.\nClick to revert your current color to this option.",
+	"menu_colorpicker_prompt_select_current" : "CURRENT COLOR\nYour new color choice.\nYou can click and drag to save it to the palette swatches.",
+	"menu_colorpicker_prompt_hex" : "HEX CODE\nThe hexadecimal color code for your current color.\nDouble left-click to copy hex color code to clipboard.\nRight-click to paste color from clipboard.",
+	"menu_colorpicker_notif_copied" : "HEX CODE\nCopied to clipboard!",
+	"menu_colorpicker_prompt_palette" : "PALETTE SWATCH\nClick to select this palette swatch.\nRight-click to save your current color to this palette swatch.",
+	"menu_colorpicker_notif_reset_palettes_success" : "PALETTE SWATCH\nSwatches have been reset to default values!"
+}

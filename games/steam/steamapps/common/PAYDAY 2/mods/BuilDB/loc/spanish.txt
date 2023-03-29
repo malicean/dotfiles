@@ -1,0 +1,14 @@
+{
+	"buildb_save_current" : "Guardar",
+	"buildb_copy_to_clipboard" : "Copiar al portapapeles",
+	"buildb_export_to_pd2skills" : "Exportar a PD2Skills",
+	"buildb_export_to_pd2builder" : "Exportar a PD2Builder",
+	"buildb_open_db" : "Editar Builds",
+	"buildb_import" : "Importar",
+	"buildb_dialog_import_message" : "¡Reemplazarás tu Build Actual!",
+	"buildb_dialog_import_btn_preview" : "Previsualizar",
+	"buildb_dialog_save_build_name" : "Nombre de la Build",
+	"buildb_dialog_save_build_descr" : "Descripción de la Build",
+	"buildb_dialog_edit_builds_file" : "Contenidos de /mods/saves/buildb_builds.txt",
+	"buildb_dialog_numenter_reminder" : "##Recordatorio##: presiona la tecla ##[Intro del teclado númerico]## para añadir una nueva línea y ##[Intro]## para guardar los cambios."
+}

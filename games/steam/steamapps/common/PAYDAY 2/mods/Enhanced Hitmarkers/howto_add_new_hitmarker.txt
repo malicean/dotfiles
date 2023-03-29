@@ -1,0 +1,12 @@
+If none of the texture pleases you, you can add yours in the folder
+"PAYDAY 2\mods\saves\Enhanced Hitmarkers".
+
+It is possible to craft a special texture that contains 3 hitmarkers so
+you get distinct bodyshot/headshot/crit. Just stack them up vertically.
+
+It is possible to craft a special texture that contains 4 hitmarkers so
+you get distinct bodyshot/headshot/critical bodyshot/critical headshot.
+
+You have nothing else to do: the texture lists of the option menu are done
+dynamically. If it does not appear, check the obvious. Like is it the right
+DDS or PNG format?

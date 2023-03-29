@@ -1,0 +1,100 @@
+{
+    "menu_id": "bai_restoration_mod_assault_box_menu",
+    "parent_menu" : "bai_restoration_mod_menu",
+    "title" : "bai_assault_box",
+    "h" : 500,
+    "items": [
+        {
+            "type" : "label",
+            "title" : "bai_assault_box"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_assault_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "assault",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [255, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["assault", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_assault_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "assault",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 255],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["assault", "c2"]
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_captain_box"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_captain_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "captain",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [0, 0, 255],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["captain", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_captain_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "captain",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [255, 255, 255],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["captain", "c2"]
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_holdout_box"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_holdout_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "holdout",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [255, 85, 30],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["holdout", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_holdout_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "holdout",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["holdout", "c2"]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "menu_id": "bai_survived_box_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_survived_box",
+    "h" : 300,
+    "items": [
+        {
+            "type" : "color_select",
+            "id" : "bai_survived_color_select_choice",
+            "title" : "bai_survived_box",
+            "description" : "",
+            "value" : "survived",
+            "default_value" : [32, 230, 32],
+            "callback" : "SetNormalColor",
+            "callback_arguments" : "survived",
+            "texture" : ["assault", "padlock"]
+        },
+        {
+            "type" : "divider",
+            "size" : 48
+        },
+        {
+            "type" : "label",
+            "title" : "bai_custom_text"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_survived_box_custom_text_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : "survived",
+            "value": "custom_text",
+            "default_value" : ""
+        },
+        {
+            "type": "divider",
+            "size": 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_custom_text_short"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_survived_box_custom_text_short_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_short_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : "survived",
+            "value": "short_custom_text",
+            "default_value" : ""
+        }
+    ]
+}

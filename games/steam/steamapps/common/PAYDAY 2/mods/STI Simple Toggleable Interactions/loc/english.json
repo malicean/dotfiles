@@ -1,0 +1,21 @@
+{
+	"sti_options_title": "Simple Toggleable Interactions",
+	"sti_options_description": "",
+
+	"sti_option_interaction_title": "Interactions",
+	"sti_option_interaction_description": "",
+
+	"sti_option_timer_title": "Minimum Timer Duration",
+	"sti_option_timer_description": "Only applies to interactions.",
+
+	"sti_option_interrupt_key_title": "Interrupt Key",
+	"sti_option_interrupt_key_description": "Only applies to interactions.",
+	"sti_option_interrupt_key_interact": "Interact",
+	"sti_option_interrupt_key_equipment": "Equipment",
+
+	"sti_option_equipment_title": "Equipment",
+	"sti_option_equipment_description": "",
+
+	"sti_option_mask_title": "Mask",
+	"sti_option_mask_description": ""
+}

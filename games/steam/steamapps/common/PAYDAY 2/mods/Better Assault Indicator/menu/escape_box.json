@@ -1,0 +1,33 @@
+{
+    "menu_id": "bai_escape_box_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_escape_box",
+    "h" : 300,
+    "items": [
+        {
+            "type" : "color_select",
+            "id" : "bai_escape_color_select_choice",
+            "title" : "bai_escape_box",
+            "description" : "",
+            "value" : "escape",
+            "default_value" : [255, 0, 0],
+            "callback" : "SetNormalColor",
+            "callback_arguments" : "escape",
+            "texture" : "noreturn"
+        },
+        {
+            "type" : "divider",
+            "size" : 48
+        },
+        {
+            "type" : "input",
+            "id" : "bai_escape_box_custom_text_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : "escape",
+            "value": "custom_text",
+            "default_value" : ""
+        }
+    ]
+}

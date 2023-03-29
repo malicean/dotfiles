@@ -1,0 +1,56 @@
+{
+	"menu_id": "sti_options_menu",
+	"parent_menu_id": "blt_options",
+	"title": "sti_options_title",
+	"description": "sti_options_description",
+	"back_callback": "STISave",
+	"items": [
+		{
+			"type": "toggle",
+			"callback": "STIToggleOption",
+			"id": "interaction",
+			"value": "interaction",
+			"title": "sti_option_interaction_title",
+			"description": "sti_option_interaction_description"
+		},
+		{
+			"type": "slider",
+			"callback": "STIGenericOption",
+			"id": "min_timer_duration",
+			"value": "min_timer_duration",
+			"title": "sti_option_timer_title",
+			"description": "sti_option_timer_description",
+			"min": 0,
+			"max": 10,
+			"step": 0.5
+		},
+		{
+			"type": "multiple_choice",
+			"callback": "STIGenericOption",
+			"id": "interact_interrupt_key",
+			"value": "interact_interrupt_key",
+			"title": "sti_option_interrupt_key_title",
+			"description": "sti_option_interrupt_key_description",
+			"items": [
+				"sti_option_interrupt_key_interact",
+				"sti_option_interrupt_key_equipment"
+			]
+		},
+		{
+			"type": "toggle",
+			"callback": "STIToggleOption",
+			"id": "equipment",
+			"value": "equipment",
+			"title": "sti_option_equipment_title",
+			"description": "sti_option_equipment_description"
+		},
+		{
+			"type": "toggle",
+			"callback": "STIToggleOption",
+			"id": "mask",
+			"value": "mask",
+			"title": "sti_option_mask_title",
+			"description": "sti_option_mask_description"
+		}
+	]
+}

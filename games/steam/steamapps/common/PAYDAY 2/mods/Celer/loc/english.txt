@@ -1,0 +1,36 @@
+{
+	"cel_options_menu_title" : "Celer",
+	"cel_options_menu_desc"  : "",
+
+	"cel_options_max_active_occluders_nr_title" : "Max active occluders",
+	"cel_options_max_active_occluders_nr_desc"  : "Max amount of occluder planes active at the same time.\nDefault value is 50.",
+
+	"cel_options_map_change_bex_title" : "$heist_bex",
+	"cel_options_map_change_big_title" : "$heist_big",
+	"cel_options_map_change_born_title" : "$heist_born ($heist_born_hl)",
+	"cel_options_map_change_bph_title" : "$heist_bph",
+	"cel_options_map_change_brb_title" : "$heist_brb",
+	"cel_options_map_change_chas_title" : "$heist_chas",
+	"cel_options_map_change_chill_combat_title" : "$heist_chill_combat",
+	"cel_options_map_change_dah_title" : "$heist_dah",
+	"cel_options_map_change_des_title" : "$heist_des",
+	"cel_options_map_change_dinner_title" : "$heist_dinner",
+	"cel_options_map_change_fex_title" : "$heist_fex",
+	"cel_options_map_change_firestarter_1_title" : "$heist_firestarter ($heist_firestarter_1_hl)",
+	"cel_options_map_change_friend_title" : "$heist_friend",
+	"cel_options_map_change_hox_1_title" : "$heist_hox ($heist_hox_1_hl)",
+	"cel_options_map_change_hox_2_title" : "$heist_hox ($heist_hox_2_hl)",
+	"cel_options_map_change_kenaz_title" : "$heist_kenaz_hl",
+	"cel_options_map_change_mex_title" : "$heist_mex",
+	"cel_options_map_change_moon_title" : "$heist_moon",
+	"cel_options_map_change_mus_title" : "$heist_mus",
+	"cel_options_map_change_nmh_title" : "$heist_nmh",
+	"cel_options_map_change_peta_title" : "$heist_peta ($heist_peta_hl)",
+	"cel_options_map_change_pex_title" : "$heist_pex",
+	"cel_options_map_change_sah_title" : "$heist_sah",
+	"cel_options_map_change_rvd2_title" : "$heist_rvd2 ($heist_rvd2_hl)",
+	"cel_options_map_change_vit_title" : "$heist_vit",
+
+	"cel_options_map_change_generic_desc" : "For details, see $cel_url",
+	"cel_url" : "http://pd2mods.z77.fr/celer.html"
+}

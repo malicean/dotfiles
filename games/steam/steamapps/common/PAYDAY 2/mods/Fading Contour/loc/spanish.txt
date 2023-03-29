@@ -1,0 +1,28 @@
+{
+	"fc_options_menu_title" : "Fading Contour",
+	"fc_options_menu_desc" : "Cambia los ajustes del desvanecimiento",
+
+	"fc_options_fade_from_title" : "Período de desvanecimiento",
+	"fc_options_fade_from_desc" : "Cuando comienza el proceso de desvanecimiento, en relación con la duración del marcado",
+
+	"fc_options_fade_method_title" : "Vel. de desvanecimiento",
+	"fc_options_fade_method_desc" : "",
+	"fc_options_fade_method_multi_a" : "Lineal",
+	"fc_options_fade_method_multi_b" : "Raíz cuadrada",
+
+	"fc_options_override_hvt_basic_title" : "Reemplazar color de HVT Básico",
+	"fc_options_override_hvt_basic_desc" : "Establece un color de contorno personalizado para los enemigos marcados por jugadores que tienen la habilidad HVT básica.",
+
+	"fc_options_override_hvt_aced_title" : "Reemplazar el color de HVT AS",
+	"fc_options_override_hvt_aced_desc" : "Establece un color de contorno personalizado para los enemigos marcados por jugadores que tienen la habilidad HVT AS. El color cambiará según la distancia para mostrar si la bonificación de daño está disponible",
+
+	"fc_options_h_title" : "Color",
+	"fc_options_h_desc" : "",
+	"fc_options_s_title" : "Saturación",
+	"fc_options_s_desc" : "",
+	"fc_options_v_title" : "Valor",
+	"fc_options_v_desc" : "",
+
+	"fc_options_test_contour_title" : "Probar el desvanecimiento del contorno",
+	"fc_options_test_contour_desc" : "Esta función solo funciona cuando se llama desde el menú principal."
+}

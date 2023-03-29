@@ -1,0 +1,17 @@
+{
+    "name" : "Stop the crimespree loss on crash",
+    "description" : "This mod is stopping the crimespree reset when you're crashing",
+    "author" : "Nepsy",
+    "contact" : "id/Nepgearsy",
+    "version" : "",
+    "priority" : 1,
+    "blt_version" : 2,
+    "image" : "stopcrash.png",
+    "color" : "255 0 255",
+    "hooks":[  
+        {  
+            "hook_id":"lib/tweak_data/crimespreetweakdata",
+            "script_path":"mod.lua"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+Revision 25:
+- fixed an issue with inventory's context panel
+
+Revision 24:
+- updated to Crewfiles r3
+
+Revision 23:
+- added support for Crewfiles when inventory items are moved
+
+Revision 22:
+- changed update system to Simple Mod Updater
+
+Revision 21:
+- added code to restore default mask if missing from savegame (but this time, it works...)
+
+Revision 20:
+- added code to restore default mask if missing from savegame
+
+Revision 19:
+- henchmen equipment is updated as inventory items are moved
+
+Revision 18:
+- prevent from moving first masks page as it screws default mask item
+
+Revision 17:
+- fixed a crash when dropping a dragged weapon on a page tab
+
+Revision 16:
+- compatibility with "Rename Inventory Pages" when pages are moved
+
+Revision 15:
+- fixed position of insert glyph when number of pages requires presence of prev/next buttons
+
+Revision 14:
+- fixed a bug in code moving pages when data is sparse
+
+Revision 13:
+- pages can be moved, see https://youtu.be/ScSRs0GXq5k
+- items can be swapped with locked slots
+- other profiles are updated (so you can move a weapon used by another profile)
+
+Revision 12:
+- even more absolutely essential BLT2 integration
+
+Revision 11:
+- more absolutely essential BLT2 integration
+
+Revision 10:
+- BLT2
+
+Revision 9:
+- stop the dragging when the interface is changed (solves an incompatibility issue with the mod "Inventory Right-Click Menus")
+
+Revision 8:
+- prevent dragging from starting in the weapon customization interface
+
+Revision 7:
+- prevent items from being moved in the loadout's inventory (base game blocks it there too)
+
+Revision 6:
+- fixed a crash when drag and dropping from a page to another from the loadout
+
+Revision 4:
+- prevent grabbing of items not yet bought
+
+Revision 3:
+- prevent to mess up your preferred character's mask
+
+Revision 2:
+- fixed texture of empty slots
+
+Revision 1:
+- initial release

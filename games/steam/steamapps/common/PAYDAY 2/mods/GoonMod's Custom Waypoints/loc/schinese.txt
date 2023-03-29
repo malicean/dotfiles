@@ -1,0 +1,30 @@
+{
+	"gm_options_custom_waypoints_menu_title" : "自定义路径点",
+	"gm_options_custom_waypoints_menu_desc" : "GoonMod's Custom Waypoints",
+
+	"gm_options_custom_waypoints_place_title" : "放置路径点",
+	"gm_options_custom_waypoints_place_desc" : "",
+
+	"gm_options_custom_waypoints_remove_title" : "移除路径点",
+	"gm_options_custom_waypoints_remove_desc" : "",
+
+	"gm_options_custom_waypoints_distance_title" : "显示与路径点的距离",
+
+	"gm_options_custom_waypoints_always_show_my_waypoint_title" : "总是显示我的路径点",
+	"gm_options_custom_waypoints_always_show_my_waypoint_desc" : "",
+
+	"gm_options_custom_waypoints_always_show_others_waypoints_title" : "总是显示其他人的路径点",
+	"gm_options_custom_waypoints_always_show_others_waypoints_desc" : "",
+
+	"gm_options_custom_waypoints_previous_title" : "上一个路径点",
+	"gm_options_custom_waypoints_previous_desc" : "为屏幕上的某个物件设定一个自定义路径点",
+
+	"gm_options_custom_waypoints_next_title" : "下一个路径点",
+	"gm_options_custom_waypoints_next_desc" : "为屏幕上的某个物件设定一个自定义路径点",
+
+	"gm_options_custom_waypoints_include_bags_title" : "战利品袋可选作为路径点标记值",
+	"gm_options_custom_waypoints_include_hostages_title" : "人质可选作为路径点标记值",
+	"gm_options_custom_waypoints_include_corpses_title" : "尸体可选作为路径点标记值",
+	"gm_options_custom_waypoints_include_players_title" : "玩家可选作为路径点标记值",
+	"gm_options_custom_waypoints_include_bots_title" : "Bots队友可选作为路径点标记值"
+}

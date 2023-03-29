@@ -1,0 +1,40 @@
+{
+	"gm_options_custom_waypoints_menu_title" : "GoonMod's Custom Waypoints",
+	"gm_options_custom_waypoints_menu_desc" : "Cambie la configuración de sus puntos de referencia personalizables.",
+
+	"gm_options_custom_waypoints_place_title" : "Colocar punto de referencia",
+	"gm_options_custom_waypoints_place_desc" : "",
+
+	"gm_options_custom_waypoints_remove_title" : "Eliminar punto de referencia",
+	"gm_options_custom_waypoints_remove_desc" : "",
+
+	"gm_options_custom_waypoints_distance_title" : "Mostrar distancia del punto de referencia",
+	"gm_options_custom_waypoints_distance_desc" : "Muestra qué tan lejos estás de los punto de referencia personalizados.",
+
+	"gm_options_custom_waypoints_always_show_my_waypoint_title" : "Mostrar siempre mi punto de referencia",
+	"gm_options_custom_waypoints_always_show_my_waypoint_desc" : "",
+
+	"gm_options_custom_waypoints_always_show_others_waypoints_title" : "Mostrar siempre los ptos. de ref. de los demás",
+	"gm_options_custom_waypoints_always_show_others_waypoints_desc" : "",
+
+	"gm_options_custom_waypoints_previous_title" : "Punto de referencia anterior",
+	"gm_options_custom_waypoints_previous_desc" : "Establezca su punto de referencia personalizado en un objetivo del juego.",
+
+	"gm_options_custom_waypoints_next_title" : "Punto de referencia siguiente",
+	"gm_options_custom_waypoints_next_desc" : "Establezca su punto de referencia personalizado en un objetivo del juego.",
+
+	"gm_options_custom_waypoints_include_bags_title" : "Las bolsas son objetos de interés",
+	"gm_options_custom_waypoints_include_bags_desc" : "Incluye las bolsas de loot en el ciclo de la lista de puntos de referencia.",
+
+	"gm_options_custom_waypoints_include_hostages_title" : "Los rehenes son objetos de interés",
+	"gm_options_custom_waypoints_include_hostages_desc" : "Incluye los rehenes en el ciclo de la lista de puntos de referencia.",
+
+	"gm_options_custom_waypoints_include_corpses_title" : "Los cadáveres son objetos de interés",
+	"gm_options_custom_waypoints_include_corpses_desc" : "Incluye los cadáveres en el ciclo de la lista de puntos de referencia.\nSolo durante el sigilo.",
+
+	"gm_options_custom_waypoints_include_players_title" : "Los jugadores son objetos de interés",
+	"gm_options_custom_waypoints_include_players_desc" : "Incluye los jugadores en el ciclo de la lista de puntos de referencia.",
+
+	"gm_options_custom_waypoints_include_bots_title" : "Los bots son objetos de interés",
+	"gm_options_custom_waypoints_include_bots_desc" : "Incluye los bots en el ciclo de la lista de puntos de referencia."
+}

@@ -1,0 +1,11 @@
+difficulty_name
+419x72
+
+aai_panel_1
+426x143
+
+aai_panel_2
+562x143
+
+captain_panel
+429x135

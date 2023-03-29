@@ -1,0 +1,16 @@
+{
+    "menu_id": "bai_hudlist_menu",
+    "parent_menu": "bai_menu",
+    "title": "bai_hudlist",
+    "items": [
+        {
+            "type": "toggle",
+            "id": "bai_hudlist_move_hudlist_choice",
+            "title": "bai_hudlist_move_hudlist",
+            "description": "bai_hudlist_move_hudlist_desc",
+            "callback": "callback_bai_move_hudlist",
+            "value": "move_hudlist",
+            "default_value": true
+        }
+    ]
+}

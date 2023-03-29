@@ -1,0 +1,26 @@
+{
+	"blt_version" : 2,
+	"name" : "Marking",
+	"description" : "Various minor modifications of the marking system.",
+	"author" : "TdlQ\n    thai translation by NewPJzuza\n    chinese translation by LR_Daring\n    portuguese translation by HYGRAWSKY\n    spanish translation by Kilowide",
+	"image" : "tdlq.dds",
+	"color" : "0.52 1 0",
+	"contact" : "",
+	"version" : "11",
+	"priority" : 500,
+	"simple_update_url" : "http://pd2mods.z77.fr/update/Marking.zip",
+	"updates": [
+		{
+			"identifier" : "SimpleModUpdater",
+			"display_name" : "Simple Mod Updater",
+			"install_folder" : "Simple Mod Updater",
+			"host" : { "meta": "http://pd2mods.z77.fr/meta/SimpleModUpdater", }
+		}
+	],
+	"hooks" : [
+		{
+			"hook_id" : "lib/units/beings/player/states/playerstandard",
+			"script_path" : "lua/playerstandard.lua"
+		}
+	]
+}

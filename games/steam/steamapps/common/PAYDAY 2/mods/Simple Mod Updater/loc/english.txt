@@ -1,0 +1,16 @@
+{
+	"smu_x_mods_disabled" : "$x mods disabled",
+	"smu_already_downloaded_ready_to_install" : "File already downloaded, ready to install",
+	"smu_changelog_title" : "Patch notes of $mod_name",
+	"smu_changelog_close" : "Close",
+	"smu_autoinstall_mod_update" : "Installation of new update in progress...",
+	"smu_autoinstall_mod_download_complete" : "Download complete!\nClick here to see patch notes.",
+
+	"smu_options_menu_title" : "Simple Mod Updater",
+	"smu_options_menu_desc" : "",
+
+	"smu_options_auto_install_title" : "Automatic installation",
+	"smu_options_auto_install_desc" : "",
+	"smu_options_notify_about_disabled_mods_title" : "Notify about disabled mods",
+	"smu_options_notify_about_disabled_mods_desc" : ""
+}

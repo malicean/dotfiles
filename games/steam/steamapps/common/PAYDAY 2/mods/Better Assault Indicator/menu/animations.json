@@ -1,0 +1,29 @@
+{
+	"menu_id" : "bai_animations_menu",
+	"parent_menu" : "bai_menu",
+    "title" : "bai_animations",
+	"items" : [
+        {
+            "type" : "toggle",
+			"id" : "bai_enable_animations_choice",
+			"title" : "bai_enable_animations",
+			"description" : "bai_enable_animations_desc",
+			"callback" : "SetAnimationOption",
+			"callback_arguments": "enable_animations",
+			"value" : "enable_animations",
+            "default_value" : true,
+            "is_parent" : true
+        },
+        {
+            "type" : "toggle",
+			"id" : "bai_animate_color_change_choice",
+			"title" : "bai_animate_color_change",
+			"description" : "bai_animate_color_change_desc",
+			"callback" : "SetAnimationOption",
+			"callback_arguments": "animate_color_change",
+			"value" : "animate_color_change",
+            "default_value" : true,
+            "parent" : "bai_enable_animations_choice"
+        }
+	]
+}

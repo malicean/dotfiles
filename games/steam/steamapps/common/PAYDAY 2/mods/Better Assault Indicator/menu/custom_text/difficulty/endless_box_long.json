@@ -1,0 +1,123 @@
+{
+    "menu_id": "bai_endless_box_custom_text_difficulty_menu",
+    "parent_menu" : "bai_endless_box_menu",
+    "title" : "bai_custom_text",
+    "items": [
+        {
+            "type" : "label",
+            "title" : "bai_normal"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_normal_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "normal"],
+            "value": "normal",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_hard"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_hard_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "hard"],
+            "value": "hard",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_very_hard"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_very_hard_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "overkill"],
+            "value": "overkill",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_overkill"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_overkill_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "overkill_145"],
+            "value": "overkill_145",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_mayhem"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_mayhem_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "easy_wish"],
+            "value": "easy_wish",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_death_wish"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_death_wish_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "overkill_290"],
+            "value": "overkill_290",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_death_sentence"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_death_sentence_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomText",
+            "callback_arguments" : ["endless", "sm_wish"],
+            "value": "sm_wish",
+            "default_value" : ""
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+	"menu_id" : "smu_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "smu_options_menu_title",
+	"description" : "smu_options_menu_desc",
+	"back_callback" : "SimpleModUpdater_MenuSave",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "auto_install",
+			"title" : "smu_options_auto_install_title",
+			"description" : "smu_options_auto_install_desc",
+			"callback" : "SimpleModUpdater_MenuCheckboxClbk",
+			"value" : "auto_install"
+		},
+		{
+			"type" : "toggle",
+			"id" : "notify_about_disabled_mods",
+			"title" : "smu_options_notify_about_disabled_mods_title",
+			"description" : "smu_options_notify_about_disabled_mods_desc",
+			"callback" : "SimpleModUpdater_MenuCheckboxClbk",
+			"value" : "notify_about_disabled_mods"
+		}
+	]
+}

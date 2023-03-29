@@ -1,0 +1,14 @@
+Revision 5:
+- added spanish translation by Kilowide
+
+Revision 4:
+- added Steam ID to save file to avoid breaking stuff for users having multiple accounts
+
+Revision 3:
+- changed update system to Simple Mod Updater
+
+Revision 2:
+- ignores out of bounds page names
+
+Revision 1:
+- initial release

@@ -1,0 +1,4 @@
+{
+	"rip_change_page_name" : "Cambiar el nombre de la página",
+	"rip_from_x_to" : "De \"$name\" a:"
+}

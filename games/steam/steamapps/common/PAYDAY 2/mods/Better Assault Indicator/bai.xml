@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<mod>
+    <hooks script_path="lua/">
+        <!-- Main code -->
+        <pre hook_id="core/lib/utils/coreapp" :script_path="core.lua"/>
+
+        <group hook_id="lib/managers/">
+            <post :hook_id="crimespreemanager" :script_path="CrimeSpreeManager.lua"/>
+
+            <!-- Used for number of enemies in assault-->
+            <post :hook_id="enemymanager" :script_path="EnemyManager.lua" />
+
+            <post :hook_id="group_ai_states/groupaistatebase" :script_path="GroupAIStateBase.lua" />
+
+            <!-- Also used for overriding HUDAssaultCorner -->
+            <post :hook_id="hudmanagerpd2" :script_path="delayed_calls.lua" />
+            <post :hook_id="hudmanagerpd2" :script_path="core.lua" />
+            <post :hook_id="hudmanagerpd2" :script_path="animations.lua" />
+
+            <!-- Menu code -->
+            <post :hook_id="menumanager" :script_path="menu.lua" />
+            <post :hook_id="menumanager" :script_path="BAIMenu.lua" />
+            <post :hook_id="menumanager" :script_path="BAIMenuCallbacks.lua" />
+            <post :hook_id="menu/menunodegui" :script_path="menunodemaingui.lua" />
+
+            <post :hook_id="mission/elementaiglobalevent" :script_path="client/ElementAiGlobalEvent.lua" />
+            <post :hook_id="mission/missionscriptelement" :script_path="client/MissionScriptElement.lua" />
+
+            <!-- Common code for all HUDs (except MUI) -->
+            <post :hook_id="hud/hudassaultcorner" :script_path="HUDAssaultCornerCommon.lua" />
+            <post :hook_id="hud/hudassaultcorner" :script_path="compatibility/hud/hudlist.lua" />
+        </group>
+
+        <post hook_id="lib/states/ingamewaitingforplayers" :script_path="IngameWaitingForPlayers.lua" />
+
+        <post hook_id="lib/setups/gamesetup" :script_path="GameSetup.lua"/>
+
+        <post hook_id="lib/tweak_data/tweakdata" :script_path="TweakData.lua"/>
+    </hooks>
+
+    <!-- Menu Textures -->
+    <:include src="assets/assets.xml"/>
+</mod>

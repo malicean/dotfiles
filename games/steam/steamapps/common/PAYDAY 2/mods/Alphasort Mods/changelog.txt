@@ -1,0 +1,19 @@
+Revision 6:
+- fixed for https://gitlab.com/znixian/payday2-superblt-lua/-/commit/2066ad2b538675644e91ec39f2469aae870f398f
+
+Revision 5:
+- added sort on host's mods in crime spree contract
+
+Revision 4:
+- added sort on "mod keybinds"
+
+Revision 3:
+- added sort on "mods installed" in lobby menu "player list"
+- added sort on host's mods in crimenet
+
+Revision 2:
+- changed update system to Simple Mod Updater
+- put disabled mods on top of the installed mods list
+
+Revision 1:
+- initial release

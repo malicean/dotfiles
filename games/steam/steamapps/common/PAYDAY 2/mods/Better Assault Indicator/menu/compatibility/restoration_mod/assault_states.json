@@ -1,0 +1,163 @@
+{
+    "menu_id": "bai_restoration_mod_assault_states_menu",
+    "parent_menu" : "bai_restoration_mod_menu",
+    "title" : "bai_assault_states",
+    "items": [
+        {
+            "type" : "label",
+            "title" : "hud_control_default"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_control_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "control",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [255, 255, 255],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["control", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_control_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "control",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["control", "c2"]
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "hud_anticipation_default"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_anticipation_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "anticipation",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [186, 204, 28],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["anticipation", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_anticipation_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "anticipation",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["anticipation", "c2"]
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "hud_build_default"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_build_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "build",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [255, 255, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["build", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_build_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "build",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["build", "c2"]
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "hud_sustain_default"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_sustain_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "sustain",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [237, 127, 127],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["sustain", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_sustain_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "sustain",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["sustain", "c2"]
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "hud_fade_default"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c1_fade_color_select_choice",
+            "title" : "bai_c1",
+            "description" : "",
+            "value" : "fade",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c1",
+            "default_value" : [0, 255, 255],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["fade", "c1"]
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_restoration_mod_c2_fade_color_select_choice",
+            "title" : "bai_c2",
+            "description" : "",
+            "value" : "fade",
+            "hud_value" : "restoration_mod",
+            "hud_c" : "c2",
+            "default_value" : [0, 0, 0],
+            "callback" : "SetRestorationColor",
+            "callback_arguments" : ["fade", "c2"]
+        }
+    ]
+}

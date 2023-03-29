@@ -1,0 +1,98 @@
+{
+    "menu_id": "bai_endless_box_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_endless_box",
+    "items": [
+        {
+            "type" : "color_select",
+            "id" : "bai_endless_color_select_choice",
+            "title" : "bai_endless_box",
+            "description" : "",
+            "value" : "endless",
+            "default_value" : [255, 0, 0],
+            "callback" : "SetNormalColor",
+            "callback_arguments" : "endless",
+            "texture" : "padlock"
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "color_select",
+            "id" : "bai_endless_color_mutated_select_choice",
+            "title" : "bai_endless_box_mutated",
+            "description" : "",
+            "value" : "endless_mutated",
+            "default_value" : [106, 67, 255],
+            "callback" : "SetNormalColor",
+            "callback_arguments" : "endless_mutated",
+            "texture" : "padlock"
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type": "toggle",
+            "id" : "bai_hide_hostage_panel_during_endless_choice",
+            "title" : "bai_hide_hostage_panel",
+            "description" : "bai_hide_hostage_panel_endless_desc",
+            "callback" : "HideHostagePanel",
+            "callback_arguments" : "endless",
+            "value" : "hide_hostage_panel",
+            "default_value" : false
+        },
+        {
+            "type" : "divider"
+        },
+        {
+            "table" : [
+                {
+                    "type" : "label",
+                    "title" : "bai_custom_text"
+                },
+                {
+                    "type" : "label",
+                    "title" : "bai_custom_text_short"
+                }
+            ]
+        },
+        {
+            "table" : [
+                {
+                    "type" : "button",
+                    "id" : "bai_custom_text_difficulty_choice",
+                    "title" : "bai_custom_text_difficulty",
+                    "description" : "bai_custom_text_difficulty_desc",
+                    "next_menu" : "bai_endless_box_custom_text_difficulty_menu"
+                },
+                {
+                    "type" : "button",
+                    "id" : "bai_short_custom_text_difficulty_choice",
+                    "title": "bai_custom_text_difficulty",
+                    "description" : "bai_custom_text_difficulty_desc",
+                    "next_menu" : "bai_endless_box_custom_text_short_difficulty_menu"
+                }
+            ]
+        },
+        {
+            "table" : [
+                {
+                    "type" : "button",
+                    "id" : "bai_custom_text_faction_choice",
+                    "title" : "bai_custom_text_faction",
+                    "description" : "bai_custom_text_faction_desc",
+                    "next_menu" : "bai_endless_box_custom_text_faction_menu"
+                },
+                {
+                    "type" : "button",
+                    "id" : "bai_short_custom_text_faction_choice",
+                    "title" : "bai_custom_text_faction",
+                    "description" : "bai_custom_text_faction_desc",
+                    "next_menu" : "bai_endless_box_custom_text_short_faction_menu"
+                }
+            ]
+            
+        }
+    ]
+}

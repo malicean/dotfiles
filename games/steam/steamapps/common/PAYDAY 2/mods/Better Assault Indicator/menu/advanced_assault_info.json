@@ -1,0 +1,115 @@
+{
+    "menu_id": "bai_advanced_assault_info_menu",
+    "parent_menu" : "bai_menu",
+    "title" : "bai_advanced_assault_info",
+    "created_menu_callback" : "BAIAAIMenuCreatedCallback",
+    "items": [
+        {
+            "type" : "toggle",
+            "id" : "bai_show_time_left_choice",
+            "title" : "bai_show_time_left",
+            "description" : "bai_show_time_left_desc",
+            "callback" : "callback_bai_show_time_left",
+            "default_value" : true,
+            "value" : "show_time_left"
+        },
+        {
+            "type": "multiple_choice",
+            "id": "bai_time_format_choice",
+            "title": "bai_time_format",
+            "description" : "bai_time_format_desc",
+            "focus_changed_callback" : "fcc_bai_time_format",
+            "callback": "callback_bai_time_format",
+            "items": [
+                "bai_time_format_1",
+                "bai_time_format_2",
+                "bai_time_format_3",
+                "bai_time_format_4",
+                "bai_time_format_5",
+                "bai_time_format_6"
+            ],
+            "default_value" : 1,
+            "value": "time_format"
+        },
+        {
+            "type": "toggle",
+            "id": "bai_show_break_time_left_choice",
+            "title": "bai_show_break_time_left",
+            "description": "bai_show_break_time_left_desc",
+            "callback": "callback_show_break_time_left",
+            "default_value": true,
+            "value": "show_break_time_left"
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_show_spawns_left_choice",
+            "title" : "bai_show_spawns_left",
+            "description" : "bai_show_spawns_left_desc",
+            "callback" : "callback_bai_show_spawns_left",
+            "default_value" : true,
+            "value" : "show_spawns_left"
+        },
+        {
+            "type": "multiple_choice",
+            "id": "bai_spawn_numbers_choice",
+            "title": "bai_spawn_numbers",
+            "description" : "bai_spawn_numbers_desc",
+            "callback": "callback_bai_spawn_numbers",
+            "items": [
+                "bai_spawn_numbers_1",
+                "bai_spawn_numbers_2"
+            ],
+            "default_value" : 1,
+            "parent" : "bai_show_spawns_left_choice",
+            "value": "spawn_numbers"
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type": "multiple_choice",
+            "id": "bai_aai_panel_choice",
+            "title": "bai_aai_panel",
+            "description" : "bai_aai_panel_desc",
+            "focus_changed_callback" : "fcc_bai_aai_panel",
+            "callback": "callback_bai_aai_panel",
+            "items": [
+                "bai_aai_panel_1",
+                "bai_aai_panel_2"
+            ],
+            "default_value" : 1,
+            "value": "aai_panel"
+        },
+        {
+            "type": "slider",
+            "id": "bai_aai_panel_update_rate_choice",
+            "title": "bai_aai_panel_update_rate",
+            "description": "bai_aai_panel_update_rate_desc",
+            "callback": "callback_bai_aai_panel_update_rate",
+            "value" : "aai_panel_update_rate",
+            "default_value": 0.5,
+            "min": 0.01,
+            "max": 5,
+            "step": 2
+        },
+        {
+            "type" : "divider",
+            "size" : 32
+        },
+        {
+            "type" : "label",
+            "title" : "bai_captain_box"
+        },
+        {
+            "type" : "toggle",
+            "id" : "bai_show_captain_panel_choice",
+            "title" : "bai_show_captain_panel",
+            "description" : "bai_show_captain_panel_desc",
+            "focus_changed_callback": "fcc_bai_captain_panel",
+            "callback" : "callback_bai_show_captain_panel",
+            "default_value" : true,
+            "value" : "captain_panel"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+Revision 27:
+- fixed contour not updated when reset at full
+
+Revision 26:
+- fixed a mod compatibility issue
+
+Revision 25:
+- updated to U230
+
+Revision 24:
+- added spanish translation by Kilowide
+
+Revision 23:
+- fixed vanilla bug where only on the head of a character has contour
+
+Revision 22:
+- made contour to disappear faster after death to avoid dead specials still capturing attention
+- fixed fading when using HVT aced
+- fixed wrong contour durations used during loud gameplay for medics
+
+Revision 21:
+- changed material update check
+
+Revision 20:
+- added chinese translation by LR_Daring
+- moved HVT colour definitions to saved settings
+
+Revision 19:
+- fixed settings related to High Value Target not taken into account when loaded
+
+Revision 18:
+- changed update system to Simple Mod Updater
+
+Revision 17:
+- do not apply HVT aced contour color on turrets as they're immune to it
+
+Revision 16:
+- added special contour color for enemies marked with skill High Value Target, color changes if above/under 10m threshold
+
+Revision 15:
+- reworked option menu to include a preview
+
+Revision 14:
+- added swedish translation by TheBreakingBenny
+
+Revision 13:
+- fixed reset of contour intensity when marking a cop/guard
+
+Revision 12:
+- added thai translation by NewPJzuza
+
+Revision 11:
+- optimized a few things
+
+Revision 10:
+- even more absolutely essential BLT2 integration
+
+Revision 9:
+- more absolutely essential BLT2 integration
+
+Revision 8:
+- BLT2
+
+Revision 7:
+- fixed a crash when trying to update the contour of an invalid unit
+
+Revision 6:
+- fixed JSON errors
+
+Revision 5:
+- added tools to synchronize fade level (library for MIC and PGT)
+- fixed ContourExt._materials that sometimes still has old values
+
+Revision 4:
+- fading now works with contours requiring a material swap
+
+Revision 3:
+- added french translation
+
+Revision 2:
+- fix: process only the active contour (a hidden contour with fadeout_t triggered an unwanted fade out)
+
+Revision 1:
+- initial release

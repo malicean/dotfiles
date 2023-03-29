@@ -1,0 +1,140 @@
+{
+    "menu_id": "bai_endless_box_custom_text_short_faction_menu",
+    "parent_menu" : "bai_endless_box_menu",
+    "title" : "bai_custom_text_short",
+    "items": [
+        {
+            "type" : "label",
+            "title" : "bai_swat"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_swat_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "swat"],
+            "value": "swat",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_fbi"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_fbi_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "fbi"],
+            "value": "fbi",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_gensec"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_gensec_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "gensec"],
+            "value": "gensec",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_zeal"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_zeal_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "zeal"],
+            "value": "zeal",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_russia"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_russia_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "russia"],
+            "value": "russia",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_zombie"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_zombie_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "zombie"],
+            "value": "zombie",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_murkywater"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_murkywater_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "murkywater"],
+            "value": "murkywater",
+            "default_value" : ""
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type" : "label",
+            "title" : "bai_federales"
+        },
+        {
+            "type" : "input",
+            "id" : "bai_endless_box_custom_text_short_federales_input_choice",
+            "title" : "bai_custom_text_input",
+            "description" : "bai_custom_text_input_desc",
+            "callback" : "SetCustomShortText",
+            "callback_arguments" : ["endless", "federales"],
+            "value": "federales",
+            "default_value" : ""
+        }
+    ]
+}
