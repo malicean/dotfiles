@@ -90,12 +90,11 @@
       "懲",
       "",
       ""
-    ],
-    "interval": 3
+    ]
   },
   "custom/weather": {
     "exec": "~/.config/waybar/scripts/weather.nu",
-    "interval": 300,
+    "interval": 600,
     "return-type": "json"
   }
 }
