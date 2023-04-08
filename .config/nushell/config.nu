@@ -290,10 +290,10 @@ let-env config = {
   show_banner: false # true or false to enable or disable the banner
 
   hooks: {
-    pre_prompt: [{
+    pre_prompt: [{ ||
       $nothing  # replace with source code to run before the prompt is shown
     }]
-    pre_execution: [{
+    pre_execution: [{ ||
       $nothing  # replace with source code to run before the repl input is run
     }]
     env_change: {
@@ -550,14 +550,12 @@ def livetex [
   pdflatex $source
 
   let-env SOURCE = $source
-  let render = job spawn --group $group {
+  let render = (job spawn --group $group {
     let source = $env.SOURCE
-    watch $source {
-      pdflatex $source
-    }
-  }
+    watch $source { || pdflatex $source }
+  })
 
-  let view = job spawn raw --group $group $"zathura ($source | path change ext 'pdf' | path expand)"
+  let view = (job spawn raw --group $group $"zathura ($source | path change ext 'pdf' | path expand)")
 
   helix $source
 
