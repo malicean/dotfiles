@@ -52,7 +52,7 @@ def daily [] {
   let until = ($data.date - (date now))
   let is_today = $until < 0hr
   
-  let title = do {
+  let title = (do { ||
     let informal = if $is_today {
       "Today"
     } else if $until < 24hr {
@@ -70,18 +70,18 @@ def daily [] {
       } else {
         prepend [$informal `, `]
       }
-  }
+  })
 
-  let hourly = do {
+  let hourly = (do { ||
     let closure = if $is_today {
-      let now_index = do { 
+      let now_index = (do { ||
         $data.hourly
           | each { |h| (date now) - $h.time }
           | enumerate
           | filter { |p| $p.item > 0sec }
           | sort-by item
           | get 0.index
-      }
+      })
 
       { |h| $h.item | hourly ($h.index == $now_index) }
     } else {
@@ -90,7 +90,7 @@ def daily [] {
     
 
     $data.hourly | enumerate | each $closure
-  }
+  })
 
   [
     [""]
@@ -122,16 +122,16 @@ def tooltip [] {
     ["Feels like: " $info.now.temp.feel.c "°\n"]
     ["Humidity: " $info.now.humidity "%\n"]
   ]
-    | each { prepend "\t\t" }
+    | each { |i| $i | prepend "\t\t" }
     | flatten)
 
   let days = ($info.days
     | last 2
-    | each { daily }
+    | each { |i| $i | daily }
     | stack --spacer "    "
-    | each { append "\n" }
+    | each { |i| $i | append "\n" }
     | flatten
-    | prepend ($info.days.0 | daily | each { prepend "\t\t" | append "\n" })
+    | prepend ($info.days.0 | daily | each { |i| $i | prepend "\t\t" | append "\n" })
     | flatten)
 
   [
@@ -142,7 +142,7 @@ def tooltip [] {
     | str join
 }
 
-let wttr = wttr fetch
+let wttr = (wttr fetch)
 
 {
   text: ($wttr | text),
