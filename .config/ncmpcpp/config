@@ -69,7 +69,7 @@ mpd_music_dir = ~/music/source
 ## visualizer.
 ##
 #
-#visualizer_data_source = /tmp/mpd.fifo
+visualizer_data_source = /tmp/mpd.fifo
 #
 ##
 ## Note: Below parameter is needed for ncmpcpp to determine which output
@@ -77,12 +77,12 @@ mpd_music_dir = ~/music/source
 ## to synchronize with audio.
 ##
 #
-#visualizer_output_name = Visualizer feed
+visualizer_output_name = vis
 #
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
 ##
-#visualizer_in_stereo = yes
+visualizer_in_stereo = yes
 #
 ##
 ## Note: set below to >=10 only if you have synchronization issues with
@@ -106,7 +106,7 @@ mpd_music_dir = ~/music/source
 #
 #visualizer_look = ●▮
 #
-#visualizer_color = blue, cyan, green, yellow, magenta, red
+visualizer_color = blue
 #
 ## Alternative subset of 256 colors for terminals that support it.
 ##
@@ -127,7 +127,7 @@ mpd_music_dir = ~/music/source
 ## visualizer look at a larger slice of time, which results in less jumpy
 ## visualizer output.
 #
-#visualizer_spectrum_dft_size = 2
+#visualizer_spectrum_dft_size = 2 
 #
 #visualizer_spectrum_gain = 10
 #
@@ -570,11 +570,11 @@ allow_for_physical_item_deletion = yes
 #
 #volume_color = default
 #
-#state_line_color = default
+state_line_color = black
 #
 #state_flags_color = default:b
 #
-#main_window_color = yellow
+main_window_color = blue
 #
 #color1 = white
 #
@@ -582,7 +582,7 @@ allow_for_physical_item_deletion = yes
 #
 #progressbar_color = black:b
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = blue:b
 #
 #statusbar_color = default
 #
@@ -592,7 +592,7 @@ allow_for_physical_item_deletion = yes
 #
 #alternative_ui_separator_color = black:b
 #
-#window_border_color = green
+window_border_color = magenta
 #
 #active_window_border = red
 #
