@@ -3,9 +3,9 @@ hosts = ["localhost:6600"]
 
 [format]
 details = "$title"
-state = "$album by $artist"
+state = "$album, by $artist"
 timestamp = "elapsed"
 large_image = "notes"
 small_image = ""
-large_text = ""
+large_text = "$album"
 small_text = ""

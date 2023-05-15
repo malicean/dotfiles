@@ -52,3 +52,5 @@ old-alias wget = wget $"--hsts-file=($env.XDG_DATA_HOME)/wget-hsts"
 alias tig = git $"--git-dir=($env.HOME)/.dotfiles/" $"--work-tree=($env.HOME)"
 alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
 alias py = ipython
+alias np = ncmpcpp
+alias s = kitty +kitten ssh

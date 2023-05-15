@@ -77,7 +77,7 @@ visualizer_data_source = /tmp/mpd.fifo
 ## to synchronize with audio.
 ##
 #
-visualizer_output_name = vis
+visualizer_output_name = Visualizer
 #
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
