@@ -25,9 +25,9 @@
     "all-outputs": true,
     "format-icons": {
       "7": "󱔼",
-      "8": "阮",
+      "8": "󰝚",
       "9": "󰍩",
-      "10": "ﭮ",
+      "10": "󰙯",
     }
   },
   "idle_inhibitor": {
@@ -62,8 +62,8 @@
     "format-disconnected": "⚠ Disconnected",
   },
   "clock": {
-    "format": "  {:%H:%M | %d %b}",
-    "format-alt": "  {:%Y-%m-%d}"
+    "format": "󰥔  {:%H:%M | %d %b}",
+    "format-alt": "󰥔  {:%Y-%m-%d}"
   },
   "battery": {
     "states": {
@@ -87,9 +87,9 @@
     "critical-threshold": 80,
     "format": "{temperatureC:<2} {icon}",
     "format-icons": [
-      "懲",
+      "󰖌",
       "",
-      ""
+      "󰈸"
     ]
   },
   "custom/weather": {

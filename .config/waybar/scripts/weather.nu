@@ -39,7 +39,7 @@ def hourly [
   let temp = ($data.temp.real.c | trip)
   let wind = ($data.wind.km | doup)
 
-  [$point " " $time " | 﨎 " $temp "° |   " $wind " | " ($data.weather.code | wttr glither)]
+  [$point " " $time " | 󰔏 " $temp "° |   " $wind " | " ($data.weather.code | wttr glither)]
 }
 
 # Converts daily weather data into a summary page
@@ -111,7 +111,7 @@ def text [] {
   let temp = $now.temp.real.c
   let wind = $now.wind.kmph
     
-  $"﨎 ($temp)° /   ($wind) / ($glither)"
+  $"󰔏 ($temp)° /   ($wind) / ($glither)"
 }
 
 def tooltip [] {
