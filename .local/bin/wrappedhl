@@ -16,7 +16,7 @@ export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONEREPARENTING=1
 export CLUTTER_BACKEND=wayland
-export GDK_BACKEND=wayland
+export GDK_BACKEND="wayland,x11"
 export XDG_SESSION_TYPE=wayland
 
 export MOZ_ENABLE_WAYLAND=1
