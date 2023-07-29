@@ -54,3 +54,4 @@ alias np = ncmpcpp
 alias npb = np --host 100.79.210.95 # plane tailscale IP
 alias t = kitty --detach
 alias r = ranger
+alias s = kitty +kitten ssh
