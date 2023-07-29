@@ -8,7 +8,7 @@ export def fac [] {
   if $to == 0 {
     1
   } else {
-    1..$to | math product
+    1..$to | each {||} | math product
   }
 }
 
@@ -29,7 +29,7 @@ export def perm [
     # However, given that a! = 1..a | math product and a! / b! = b..a | math product,
     # we can calculate the numerator and denominator and then do a smart calculation
 
-    ($set - $choose)..$set | skip 1 | math product
+    ($set - $choose)..$set | each {||} | skip 1 | math product
   }
 }
 

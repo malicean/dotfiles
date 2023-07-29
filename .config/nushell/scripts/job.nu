@@ -7,7 +7,7 @@
 # spawn { echo 3 }
 export def spawn [
     --group (-g): string = "default", # The group
-    command: block                    # The command to spawn
+    command: closure                  # The command to spawn
 ] {
     let source_code = (view source $command | str trim -l -c '{' | str trim -r -c '}')
     let config_path = $nu.config-path
