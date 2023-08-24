@@ -24,5 +24,13 @@ export ERRFILE="$XDG_CACHE_HOME"/X11/xsession-errors
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
+<<<<<<< Updated upstream
 export PATH="$PATH":"$CARGO_HOME"/bin
 export MPD_HOST="$HOME"/.local/state/mpd/socket
+||||||| Stash base
+export PATH="$PATH":"$CARGO_HOME"/bin
+export MPD_HOST="$HOME"/.local/state/mpd/socket
+=======
+export PATH="$PATH":"$CARGO_HOME"/bin:"$HOME"/.local/bin
+export MPD_HOST="$HOME"/.local/state/mpd/socket
+>>>>>>> Stashed changes
