@@ -1,0 +1,6 @@
+#! /usr/bin/env nu
+
+let id = hyprctl activeworkspace -j | from json | get monitor
+let monitor = hyprctl monitors -j | from json | filter { |m| $m.name == $id } | first
+
+$"($monitor.x),($monitor.y) ($monitor.width)x($monitor.height)\n"

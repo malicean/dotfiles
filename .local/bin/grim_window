@@ -1,0 +1,6 @@
+#! /usr/bin/env nu
+
+let window = hyprctl activewindow -j | from json
+let border = hyprctl getoption -j general:border_size | from json | get int
+
+$"($window.at.0 - $border),($window.at.1 - $border) ($window.size.0 + $border * 2)x($window.size.1 + $border * 2)\n"
