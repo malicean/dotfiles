@@ -1,0 +1,57 @@
+position: "top"
+height: 42
+start:
+  - type: clock
+    format: '%m/%d %H:%M'
+  - type: script
+    class: weather
+    cmd: /home/ash/.config/ironbar/scripts/weather.nu
+    interval: 900000
+center:
+  - type: workspaces
+    name_map:
+      '7': 󱔼
+      '8': 󰝚
+      '9': 󰍩
+      '10': 󰙯,
+    all_monitors: true
+  - type: custom
+    class: power-menu
+    bar:
+    - on_click: popup:toggle
+      label: ⏻
+      name: power-btn
+      type: button
+    popup:
+    - orientation: vertical
+      type: box
+      widgets:
+      - type: box
+        widgets:
+        - class: power-btn
+          on_click: '!shutdown now'
+          label: ⏻
+          type: button
+        - class: power-btn
+          on_click: '!reboot'
+          label: 
+          type: button
+      - label: '{{30000:uptime -p | cut -d '' '' -f2-}}'
+        name: uptime
+        type: label
+end:
+  - type: music
+    player_type: mpd
+    format: '{title}    {artist}'
+    truncate: end
+    show_status_icon: false
+    cover_image_size: 160
+    host: '/home/ash/.local/state/mpd/socket'
+    music_dir: '/home/ash/music/source'
+  - type: sys_info
+    format:
+      - '{net_down:enp34s0} / {net_up:enp34s0} 󰈀'
+      - '{temp_c:k10temp-Tctl} 󰈸'
+    interval:
+      networks: 3
+      temps: 5
