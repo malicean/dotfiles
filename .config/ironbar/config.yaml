@@ -5,7 +5,7 @@ start:
     format: '%m/%d %H:%M'
   - type: script
     class: weather
-    cmd: /home/ash/.config/ironbar/scripts/weather.nu
+    cmd: /home/malicean/.config/ironbar/scripts/weather.nu
     interval: 900000
 center:
   - type: workspaces
@@ -46,8 +46,8 @@ end:
     truncate: end
     show_status_icon: false
     cover_image_size: 160
-    host: '/home/ash/.local/state/mpd/socket'
-    music_dir: '/home/ash/music/source'
+    host: '/home/malicean/.local/state/mpd/socket'
+    music_dir: '/home/malicean/music/source'
   - type: sys_info
     format:
       - '{net_down:enp34s0} / {net_up:enp34s0} 󰈀'
