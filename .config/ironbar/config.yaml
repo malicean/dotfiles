@@ -36,7 +36,7 @@ center:
           on_click: '!reboot'
           label: 
           type: button
-      - label: '{{30000:uptime -p | cut -d '' '' -f2-}}'
+      - label: '{{60000:uptime -p | cut -d '' '' -f2-}}'
         name: uptime
         type: label
 end:
