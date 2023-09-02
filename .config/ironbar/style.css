@@ -7,137 +7,139 @@
 @define-color urgent #d14f79;
 
 * {
-    font-size: 12px;
-    font-family: Fira Code NerdFont;
-    font-weight: bold;
+  font-size: 12px;
+  font-family: Fira Code NerdFont;
+  font-weight: bold;
 
-    background: @bg;
-    color: @fg;
+  background: @bg;
+  color: @fg;
 
-    border: none;
-    border-radius: 0;
+  border: none;
+  border-radius: 0;
 
-    transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 #center {
-    margin: 0 10em 0 10em;
+  margin: 0 10em 0 10em;
 }
+
 .popup {
-    border: 0.2em solid @active;
-    padding: 1em;
+  border: 0.2em solid @active;
+  padding: 1em;
 }
 
 .clock {
-    padding: 0;
+  padding: 0;
 }
 
 .clock label {
-    padding: 0 1em 0 1em;
+  padding: 0 1em 0 1em;
 }
 
 .clock:hover * {
-    color: @selected;
+  color: @selected;
 }
 
 .clock:active * {
-    box-shadow: inset 0 0.25em @selected;
+  box-shadow: inset 0 0.25em @selected;
 }
 
 .popup-clock {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .popup-clock .calendar-clock {
-    font-size: 5em;
-    
-    padding-bottom: 0.1em;
-    border-bottom: 0.05em solid @active;
-    margin-bottom: 0.25em;
+  font-size: 5em;
+
+  padding-bottom: 0.1em;
+  border-bottom: 0.05em solid @active;
+  margin-bottom: 0.25em;
 }
 
 .popup-clock .calendar {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .popup-clock .calendar:selected {
-    color: @selected;
-    box-shadow: inset 0 -0.25em @selected;
+  color: @selected;
+  box-shadow: inset 0 -0.25em @selected;
 }
 
 .weather {
-    padding: 0 2em 0 1em;
+  padding: 0 2em 0 1em;
 }
 
 .workspaces .item.visible {
-    box-shadow: inset 0 0.25em @visible;
+  box-shadow: inset 0 0.25em @visible;
 }
 
 .workspaces .item.focused {
-    box-shadow: inset 0 0.25em @active;
+  box-shadow: inset 0 0.25em @active;
 }
 
 .workspaces .item:hover {
-    box-shadow: inset 0 0.25em @selected;
+  box-shadow: inset 0 0.25em @selected;
 }
 
 .workspaces .item:hover * {
-    color: @selected;
+  color: @selected;
 }
 
 .power-menu {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 #power-btn *:first-child {
-    margin: 0;
-    padding: 0 1.5em 0 1.5em;
+  margin: 0;
+  padding: 0 1.5em 0 1.5em;
 }
 
 #power-btn:hover * {
-    background: @urgent;
-    color: @bg;
+  background: @urgent;
+  color: @bg;
 }
 
 .popup-power-menu {
-    padding: 0;
+  padding: 0;
 }
 
 .popup-power-menu .power-btn {
-    padding: 3em 4em;
+  padding: 3em 4em;
 }
 
 .popup-power-menu .power-btn label {
-    font-size: 5em;
+  font-size: 5em;
 }
 
-.popup-power-menu .power-btn:hover, .popup-power-menu .power-btn:hover * {
-    background: @urgent;
-    color: @bg;
+.popup-power-menu .power-btn:hover,
+.popup-power-menu .power-btn:hover * {
+  background: @urgent;
+  color: @bg;
 }
 
 .popup-power-menu .horizontal {
-    border-bottom: 0.2em solid @active;
+  border-bottom: 0.2em solid @active;
 }
 
 .popup-power-menu #uptime {
-    padding: 1em;
+  padding: 1em;
 }
 
 .music {
-    padding: 0;
+  padding: 0;
 }
 
 .music label {
-    padding: 0 1em 0 1em;
+  padding: 0 1em 0 1em;
 }
 
 .music:hover * {
-    color: @selected;
+  color: @selected;
 }
 
 .music:active * {
-    box-shadow: inset 0 0.25em @selected;
+  box-shadow: inset 0 0.25em @selected;
 }
 
 /*
@@ -146,69 +148,91 @@ padding + borders cheesing makes a cool grate effect which fits the TWM look
 */
 
 .popup-music {
-    padding: 0;
+  padding: 0;
 }
 
 /* left (album art) */
-.popup-music .album-art {  
-    padding: 1em;
+.popup-music .album-art {
+  padding: 1em;
 
-    border-right: 0.2em solid @active;
+  border-right: 0.2em solid @active;
 }
 
 /* middle (track, album, artist, controls)  */
-.popup-music > .horizontal > .vertical:nth-child(2) {
-    padding: 2em 1em 0.5em 1em;
+.popup-music>.horizontal>.vertical:nth-child(2) {
+  padding: 2em 1em 0.5em 1em;
 }
 
-.popup-music > .horizontal > .vertical:nth-child(2) .horizontal * {
-    font-size: 1.25em;
+.popup-music>.horizontal>.vertical:nth-child(2) .horizontal * {
+  font-size: 1.25em;
 }
 
-.popup-music > .horizontal > .vertical:nth-child(2) .horizontal .label {
-    padding-bottom: 0.25em;
+.popup-music>.horizontal>.vertical:nth-child(2) .horizontal .label {
+  padding-bottom: 0.25em;
 }
 
 /* right (volume) */
 .popup-music .volume {
-    padding: 2em 1em 1em 1em;
+  padding: 2em 1em 1em 1em;
 
-    border-left: 0.2em solid @active;
+  border-left: 0.2em solid @active;
 }
 
 /* i don't like the icon */
 .popup-music .volume .icon {
-    opacity: 0;
-    font-size: 0;
+  opacity: 0;
+  font-size: 0;
 }
 
 /* top half (three panes) */
-.popup-music > .horizontal:first-child {
-    border-bottom: 0.2em solid @active;
+.popup-music>.horizontal:first-child {
+  border-bottom: 0.2em solid @active;
 }
 
 .popup-music .progress {
-    padding: 0.5em 3em;
+  padding: 0.5em 3em;
 }
 
 /* volume and progress bar */
-.popup-music .label, .popup-music .vertical .slider > * {
-    font-size: 1.25em;
+.popup-music .label,
+.popup-music .vertical .slider>* {
+  font-size: 1.25em;
 }
 
 .popup-music .slider trough {
-    border: 0.2em solid @fg;
+  border: 0.2em solid @fg;
 }
 
 .popup-music .slider slider {
-    border-radius: 5%;
-    background: @active;
+  border-radius: 5%;
+  background: @active;
+}
+
+.upower {
+  padding: 0 2em 0 1em;
+}
+
+.upower .icon image {
+  color: @active;
+}
+
+.upower.button:hover * {
+  color: @selected;
+}
+
+.upower.button:active,
+.upower.button:active * {
+  box-shadow: inset 0 0.25em @selected;
+}
+
+.popup-upower .upower-details {
+  font-size: 1.5em;
 }
 
 .sysinfo {
-    padding: 0 1em 0 1em;
+  padding-right: 1em;
 }
 
 .sysinfo .item {
-    padding-right: 1em;
+  padding-right: 0.75em;
 }

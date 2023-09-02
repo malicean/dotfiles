@@ -1,7 +1,5 @@
 #! /usr/bin/env nu
 
-# TODO: add case for yesterday (at midnight, data becomes [yesterday today tomorrow] rather than [today tomorrow overmorrow])
-
 use ~/.config/nushell/scripts/wttr.nu
 
 def text [] {

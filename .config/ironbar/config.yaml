@@ -48,9 +48,11 @@ end:
     cover_image_size: 160
     host: '/home/malicean/.local/state/mpd/socket'
     music_dir: '/home/malicean/music/source'
+  - type: upower
+    icon_size: 20
   - type: sys_info
     format:
-      - '{net_down:enp34s0} / {net_up:enp34s0} 󰈀'
+      - '{net_down:wlan0} / {net_up:wlan0} 󰈀'
       - '{temp_c:k10temp-Tctl} 󰈸'
     interval:
       networks: 3
