@@ -159,15 +159,15 @@ padding + borders cheesing makes a cool grate effect which fits the TWM look
 }
 
 /* middle (track, album, artist, controls)  */
-.popup-music>.horizontal>.vertical:nth-child(2) {
+.popup-music>.horizontal>.vertical:nth-last-child(2) {
   padding: 2em 1em 0.5em 1em;
 }
 
-.popup-music>.horizontal>.vertical:nth-child(2) .horizontal * {
+.popup-music>.horizontal>.vertical:nth-last-child(2) .horizontal * {
   font-size: 1.25em;
 }
 
-.popup-music>.horizontal>.vertical:nth-child(2) .horizontal .label {
+.popup-music>.horizontal>.vertical:nth-last-child(2) .horizontal .label {
   padding-bottom: 0.25em;
 }
 
@@ -189,6 +189,7 @@ padding + borders cheesing makes a cool grate effect which fits the TWM look
   border-bottom: 0.2em solid @active;
 }
 
+/* bottom half (progress bar) */
 .popup-music .progress {
   padding: 0.5em 3em;
 }
