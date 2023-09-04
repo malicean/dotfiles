@@ -5,7 +5,7 @@
 @define-color dull #909090;
 
 * {
-  font-size: 16px;
+  font-size: 12px;
   font-family: Fira Code NerdFont;
 
   background: @bg;
