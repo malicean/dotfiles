@@ -1,13 +1,13 @@
 @define-color bg #0d0f18;
 @define-color fg #a6a6a6;
 
-@define-color visible #ffb900;
-@define-color selected #8ce00a;
+@define-color visible #6c43a5;
+@define-color selected #ffb900;
 @define-color active #008df8;
-@define-color urgent #d14f79;
+@define-color urgent #ff000f;
 
 * {
-  font-size: 12px;
+  font-size: 16px;
   font-family: Fira Code NerdFont;
   font-weight: bold;
 

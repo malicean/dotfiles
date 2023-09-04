@@ -4,7 +4,7 @@
 @define-color bg-focused #002a3a;
 
 * {
-  font-size: 24px;
+  font-size: 32px;
   font-family: Fira Code NerdFont;
 }
 
@@ -13,7 +13,7 @@
 }
 
 #input {
-  font-size: 30px;
+  font-size: 40px;
   background: @bg-focused;
 
   border: none;

@@ -1,5 +1,5 @@
 position: "top"
-height: 42
+height: 56
 start:
   - type: clock
     format: '%m/%d %H:%M'
@@ -29,11 +29,11 @@ center:
       - type: box
         widgets:
         - class: power-btn
-          on_click: '!shutdown now'
+          on_click: '!systemctl poweroff'
           label: ⏻
           type: button
         - class: power-btn
-          on_click: '!reboot'
+          on_click: '!systemctl reboot'
           label: 
           type: button
       - label: '{{60000:uptime -p | cut -d '' '' -f2-}}'
