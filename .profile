@@ -23,6 +23,9 @@ export GOPATH="$XDG_DATA_HOME"/go
 export ERRFILE="$XDG_CACHE_HOME"/X11/xsession-errors
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export OPAMROOT="$XDG_DATA_HOME"/opam
 
 export PATH="$PATH":"$CARGO_HOME"/bin:"$HOME"/.local/bin
 export MPD_HOST="$HOME"/.local/state/mpd/socket
+
+test -r /home/malicean/.local/share/opam/opam-init/init.sh && . /home/malicean/.local/share/opam/opam-init/init.sh > /dev/null 2> /dev/null || true
