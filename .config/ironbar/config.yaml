@@ -1,5 +1,5 @@
 position: "top"
-height: 56
+height: 44
 start:
   - type: clock
     format: '%m/%d %H:%M'
