@@ -52,4 +52,4 @@ alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
 alias py = ipython
 alias np = ncmpcpp
 alias npb = np --host 100.79.210.95 # plane tailscale IP
-alias s = kitty +kitten ssh
+alias t = kitty --detach
