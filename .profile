@@ -29,4 +29,9 @@ export OPAMROOT="$XDG_DATA_HOME"/opam
 export PATH="$PATH":"$CARGO_HOME"/bin:"$HOME"/.local/bin
 export MPD_HOST="$HOME"/.local/state/mpd/socket
 
+alias np=ncmpcpp
+alias npb='np --host 100.79.210.95' # plane tailscale IP
+alias t='kitty --detach'
+alias r=ranger
+
 test -r /home/malicean/.local/share/opam/opam-init/init.sh && . /home/malicean/.local/share/opam/opam-init/init.sh > /dev/null 2> /dev/null || true
