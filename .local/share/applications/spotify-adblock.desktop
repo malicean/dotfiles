@@ -4,7 +4,7 @@ Name=Spotify (adblock)
 GenericName=Music Player
 Icon=spotify-client
 TryExec=spotify
-Exec=env LD_PRELOAD=/usr/lib/spotify-adblock.so /opt/spotify/spotify %U
+Exec=env LD_PRELOAD=/usr/lib/spotify-adblock.so /opt/spotify/spotify --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 Terminal=false
 MimeType=x-scheme-handler/spotify;
 Categories=Audio;Music;Player;AudioVideo;
