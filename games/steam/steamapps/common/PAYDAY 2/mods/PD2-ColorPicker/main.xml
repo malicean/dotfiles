@@ -1,6 +1,0 @@
-<mod name="Colorpicker" author="Offyerrocker" color="Color(1,1,1)" >
-	<AssetUpdates id="29641" version="4" provider="modworkshop" install_directory = "mods/" version_is_number="true"/>
-	<Localization directory="localization" default="english.json">
-		<loc file="english.json" language="english" />
-	</Localization>
-</mod>

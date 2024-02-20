@@ -1,8 +1,0 @@
-Revision 3:
-- excluded akimbo weapons
-
-Revision 2:
-- fixed LMGs
-
-Revision 1:
-- initial release

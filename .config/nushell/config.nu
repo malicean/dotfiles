@@ -522,10 +522,6 @@ $env.config = {
   ]
 }
 
-use job.nu
-use wttr.nu
-use math.nu
-
 # Changes the extension of a path
 def "path change ext" [
   ext: string # The new extension
@@ -535,27 +531,7 @@ def "path change ext" [
   [ ([$parsed.parent $parsed.stem] | path join) '.' $ext ] | str join
 }
 
-# Opens a LaTeX file in helix for editing, and zathura with a live preview
-def livetex [
-  --group (-g): string = "tex", # the pueue group to run the file watcher and zathura
-  source: string # the file to edit
-] {
-  if ($source | path type) != file {
-    return
-  }
-
-  pdflatex $source
-
-  $env.SOURCE = $source
-  let render = (job spawn --group $group {
-    let source = $env.SOURCE
-    watch $source { || pdflatex $source }
-  })
-
-  let view = (job spawn raw --group $group $"zathura ($source | path change ext 'pdf' | path expand)")
-
-  helix $source
-
-  job kill $render.job_id | save --raw --force /dev/null
-  job kill $view.job_id | save --raw --force /dev/null
-}
+use job.nu
+use math.nu
+use livetyp.nu
+use wttr.nu

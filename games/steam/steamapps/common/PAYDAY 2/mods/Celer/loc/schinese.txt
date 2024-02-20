@@ -1,6 +1,0 @@
-{
-	"cel_options_max_active_occluders_nr_title" : "最大封堵平面数量",
-	"cel_options_max_active_occluders_nr_desc" : "封堵平面用于划分不同区域，你所在区域外的贴图不会渲染。\n调整其最大数量可能会对帧数造成影响(多不一定意味着快)，默认值为50。",
-
-	"cel_options_map_change_generic_desc" : "访问$cel_url以了解该MOD在不同地图下的优化细节"
-}

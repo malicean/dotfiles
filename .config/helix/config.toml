@@ -2,3 +2,6 @@ theme = "monokai_trans"
 
 [editor]
 line-number = "relative"
+
+[editor.soft-wrap]
+enable = true
