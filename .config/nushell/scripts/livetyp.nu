@@ -32,6 +32,10 @@ export def main [
 
   helix $source
 
-  job kill $render.id | ignore
-  job kill $view.id | ignore
+  try {
+    job kill $view.id | ignore
+  } catch {}
+  try {
+    job kill $render.id | ignore
+  } catch {}
 }

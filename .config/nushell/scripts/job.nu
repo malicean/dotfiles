@@ -137,7 +137,7 @@ export def kill [
     } | str trim)
 
     if $result == $"Tasks are being killed: ($id)" {
-        return true
+        return
     }
 
     if $result == $"The command failed for tasks: ($id)" {
