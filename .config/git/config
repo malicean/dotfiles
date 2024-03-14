@@ -1,7 +1,7 @@
 [add.interactive]
 	userBuiltin = false
 [core]
-	pager = delta
+	pager = delta --light
 [commit]
 	gpgSign = true
 [delta]
@@ -10,7 +10,7 @@
 [diff]
 	colorMoved = default
 [interactive]
-	diffFilter = delta --color-only
+	diffFilter = delta --light --color-only
 [init]
 	defaultBranch = main
 [fetch]

@@ -1,35 +1,47 @@
-@define-color fg-focused #fffaf3;
-@define-color fg-unfocused #a6a6a6;
-@define-color bg-unfocused #0d0f18;
-@define-color bg-focused #002a3a;
+@define-color fg #000000;
+@define-color bg #f8f8f8;
+@define-color selected #CFE8FD;
+@define-color border #404040;
 
 * {
-  font-size: 32px;
-  font-family: Fira Code NerdFont;
+  font-size: 36px;
+  font-family: Nimbus Sans;
+
+  color: @fg;
 }
 
 #outer-box {
-  background: @bg-unfocused;
+  background: @bg;
+
+  border-radius: 0.1em;
+  border: 0.05em solid @border;
 }
 
 #input {
-  font-size: 40px;
-  background: @bg-focused;
+  font-size: 72px;
+
+  background: @bg;
+  caret-color: transparent;
 
   border: none;
-  border-radius: 0;
+  border-bottom: 0.025em solid @border;
+  border-radius: 0.05em;
 
-  padding: 0.75em 0.5em 0.25em 0.5em;
-  margin-bottom: 0.5em;
+  padding: 0.25em 0.125em 0 0.125em;
+}
+
+#scroll {
+  min-height: 1.5em;
 }
 
 #entry {
   padding: 0.25em;
-  background: @bg-unfocused;
-  color: @fg-unfocused;
+}
+
+#entry image {
+  padding-right: 0.5em;
 }
 
 #entry:selected {
-  background: @bg-focused;
-  color: @fg-focused;
+  background: @selected;
 }

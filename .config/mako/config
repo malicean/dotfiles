@@ -1,16 +1,17 @@
-font=Fira Code NerdFont 14
+font=Nimbus Sans 24
 
-background-color=#0d0f18
-text-color=#fffaf3
+background-color=#f8f8f8
+text-color=#262626
 
-text-alignment=right
+text-alignment=left
 icon-location=right
-width=800
+width=500
 height=300
 padding=8
 
 border-size=2
-border-color=#008df8
+border-radius=2
+border-color=#404040
 
 default-timeout=5000
 
