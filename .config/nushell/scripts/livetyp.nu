@@ -27,7 +27,10 @@ export def main [
   assert_file $source (metadata $source).span
   assert_group $group
 
-  let render = job spawn raw --group $group $"typst watch ($source)"
+  typst compile $source
+
+  let abs = $source | path expand
+  let render = job spawn --group $group { watch $abs { typst compile $abs } }
   let view = job spawn raw --group $group $"zathura ($source | path change ext pdf)"
 
   helix $source
