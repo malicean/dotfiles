@@ -1,13 +1,13 @@
+normal_window=true
+
 mode=drun,run
 sort_order=alphabetical
 insensitive=true
 filter_rate=8
 
-width=25%
-xoffset=960
-yoffset=120
+height=66%
+width=33%
 
-lines=9
 hide_scroll=true
 prompt=
 allow_images=true

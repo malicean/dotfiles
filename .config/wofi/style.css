@@ -4,7 +4,7 @@
 @define-color border #404040;
 
 * {
-  font-size: 36px;
+  font-size: 48px;
   font-family: Nimbus Sans;
 
   color: @fg;
