@@ -10,10 +10,7 @@ start:
 center:
   - type: workspaces
     name_map:
-      '7': 󱔼
-      '8': 󰝚
-      '9': 󰍩
-      '10': 󰙯,
+      '10': 󰍩,
     all_monitors: true
   - type: custom
     class: power-menu
