@@ -533,5 +533,7 @@ def "path change ext" [
 
 use job.nu
 use math.nu
+
+use broom.nu
 use livetyp.nu
 use wttr.nu
