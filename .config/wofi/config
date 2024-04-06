@@ -8,6 +8,9 @@ filter_rate=8
 height=66%
 width=33%
 
+allow_images=true
+image_size=64
+
 hide_scroll=true
 prompt=
-allow_images=true
+no_actions=true
