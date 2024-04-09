@@ -30,6 +30,15 @@
   padding: 0.25em 0.125em 0 0.125em;
 }
 
+#input:first-child> :nth-child(1) {
+  color: @bg;
+}
+
+/* clear icon */
+#input:first-child> :nth-child(4) {
+  color: @bg;
+}
+
 #scroll {
   min-height: 1.5em;
 }
