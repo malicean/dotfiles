@@ -1,7 +1,7 @@
-@define-color bg #e8e8e8;
-@define-color fg #202020;
+@define-color bg #000;
+@define-color fg #d8d8d8;
 
-@define-color selected #000000;
+@define-color selected #ffffff;
 @define-color dull #909090;
 
 * {
@@ -13,12 +13,9 @@
 
   border: none;
   border-radius: 0;
+  box-shadow: none;
 
   transition: 0.2s ease-out;
-}
-
-#center {
-  margin: 0 10em 0 10em;
 }
 
 .popup {
@@ -27,70 +24,13 @@
   padding: 1em;
 }
 
-.clock {
+#power-btn {
   padding: 0;
 }
 
-.clock label {
-  padding: 0 1em 0 1em;
-}
-
-.clock:hover * {
-  color: @selected;
-}
-
-.clock:active * {
-  box-shadow: inset 0 0.25em @selected;
-}
-
-.popup-clock {
-  padding-bottom: 0;
-}
-
-.popup-clock .calendar-clock {
-  font-size: 5em;
-
-  padding-bottom: 0.1em;
-  border-bottom: 0.05em solid @fg;
-  margin-bottom: 0.25em;
-}
-
-.popup-clock .calendar {
-  padding-bottom: 1em;
-}
-
-.popup-clock .calendar:selected {
-  color: @selected;
-  box-shadow: inset 0 -0.25em @selected;
-}
-
-.weather {
-  padding: 0 2em 0 1em;
-}
-
-.workspaces * {
-  color: @dull;
-}
-
-.workspaces .item.visible * {
-  color: @fg;
-}
-
-.workspaces .item.focused {
-  box-shadow: inset 0 0.25em @fg;
-}
-
-.workspaces .item:hover * {
-  color: @selected;
-}
-
-.power-menu {
-  margin-left: 2em;
-}
-
-#power-btn *:first-child {
-  margin: 0;
-  padding: 0 1.5em 0 1.5em;
+#power-btn label {
+  margin-left: 0.25em;
+  padding: 0 2em;
 }
 
 #power-btn:hover * {
@@ -124,20 +64,86 @@
   padding: 1em;
 }
 
+.clock {
+  padding: 0;
+}
+
+.clock label {
+  padding: 0 2em;
+}
+
+.clock:hover * {
+  background: @fg;
+  color: @bg;
+}
+
+.clock:active * {
+  background: @selected;
+}
+
+.popup-clock {
+  padding-bottom: 0;
+}
+
+.popup-clock .calendar-clock {
+  font-size: 5em;
+
+  padding-bottom: 0.1em;
+  border-bottom: 0.05em solid @fg;
+  margin-bottom: 0.25em;
+}
+
+.popup-clock .calendar {
+  padding-bottom: 1em;
+}
+
+.popup-clock .calendar:selected {
+  color: @selected;
+  box-shadow: inset 0 -0.25em @selected;
+}
+
+.workspaces .item {
+  color: @dull;
+  padding: 0;
+}
+
+.workspaces .item * {
+  padding: 0 1em;
+}
+
+.workspaces .item.visible * {
+  color: @fg;
+}
+
+.workspaces .item.focused * {
+  box-shadow: inset 0 0.25em @fg;
+}
+
+.workspaces .item:hover * {
+  background: @fg;
+  color: @bg;
+}
+
+.workspaces .item.focused:hover * {
+  box-shadow: inset 0 -0.5em @bg;
+}
+
 .music {
   padding: 0;
 }
 
 .music label {
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
 }
 
 .music:hover * {
-  color: @selected;
+  background: @fg;
+  color: @bg;
 }
 
 .music:active * {
-  box-shadow: inset 0 0.25em @selected;
+  background: @selected;
+  color: @bg;
 }
 
 /*
@@ -211,27 +217,27 @@ padding + borders cheesing makes a cool grate effect which fits the TWM look
   padding: 0 2em 0 1em;
 }
 
-.upower .icon image {
+.upower .icon {
   color: @fg;
 }
 
+.upower.button:hover,
 .upower.button:hover * {
-  color: @selected;
+  background: @fg;
+  color: @bg;
 }
 
 .upower.button:active,
 .upower.button:active * {
-  box-shadow: inset 0 0.25em @selected;
+  background: @selected;
+  color: @bg;
 }
 
 .popup-upower .upower-details {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
-.sysinfo {
-  padding-right: 1em;
-}
-
-.sysinfo .item {
-  padding-right: 0.75em;
+.weather {
+  padding: 0 2em 0 1em;
 }

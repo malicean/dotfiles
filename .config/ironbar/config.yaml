@@ -1,17 +1,6 @@
 position: "top"
 height: 44
 start:
-  - type: clock
-    format: '%m/%d %H:%M'
-  - type: script
-    class: weather
-    cmd: /home/malicean/.config/ironbar/scripts/weather.nu
-    interval: 900000
-center:
-  - type: workspaces
-    name_map:
-      '10': 󰍩,
-    all_monitors: true
   - type: custom
     class: power-menu
     bar:
@@ -36,6 +25,13 @@ center:
       - label: '{{60000:uptime -p | cut -d '' '' -f2-}}'
         name: uptime
         type: label
+  - type: clock
+    format: '%m/%d %H:%M'
+  - type: workspaces
+    name_map:
+      '10': 󰍩,
+    all_monitors: true
+center:
 end:
   - type: music
     player_type: mpd
@@ -46,11 +42,8 @@ end:
     host: '/home/malicean/.local/state/mpd/socket'
     music_dir: '/home/malicean/music/source'
   - type: upower
-    icon_size: 20
-  - type: sys_info
-    format:
-      - '{net_down:wlan0} / {net_up:wlan0} 󰈀'
-      - '{temp_c:k10temp-Tctl} 󰈸'
-    interval:
-      networks: 3
-      temps: 5
+    icon_size: 16
+  - type: script
+    class: weather
+    cmd: /home/malicean/.config/ironbar/scripts/weather.nu
+    interval: 900000
