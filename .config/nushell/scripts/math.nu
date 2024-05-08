@@ -105,3 +105,62 @@ export def phi [] {
   | filter { |i| (gcd-presort $i $n) == 1 }
   | length) + 1
 }
+
+# Creates a list T where the ith entry equals ($in ** (2 ** i)) mod $mod, for all i s.t. 2 ** i <= p
+#
+# Signatures:
+# <int> | math n-pow2 <int> <int> -> <list>
+def n-pow2 [
+  p: int,
+  mod: int
+] {
+  let n = $in
+  let p_lg = ($p | math log 2) | math floor
+  mut n_pow2 = [1 ($n mod $mod)] | append 3..$p_lg
+
+  for i in 2..$p_lg {
+    let prev = $n_pow2 | get ($i - 1)
+    let cur = ($prev ** 2) mod $mod
+    
+    $n_pow2 = ($n_pow2 | upsert $i $cur)
+  }
+
+  $n_pow2
+}
+
+export def rem-pow [
+  p: int,
+  mod: int
+] {
+  let n = $in
+
+  if $mod < 2 {
+    error make {
+      message: "modulus must be at least 2"
+    }
+  }
+
+  if $p < 0 {
+    error make {
+      message: "cannot raise to negative powers"
+    }
+  } else if $p == 0 {
+    1
+  } else if $p == 1 {
+    $n mod $p
+  } else {
+    let n_pow2 = $n | n-pow2 $p $mod
+
+    mut ret = 1
+    mut left = $p
+
+    while $left > 0 {
+      let left_lg2 = $left | math log 2 | math floor
+
+      $left -= 2 ** $left_lg2
+      $ret *= (($n_pow2 | get $left_lg2) mod $mod)
+    }
+
+    $ret
+  }
+}
