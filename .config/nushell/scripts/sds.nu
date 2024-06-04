@@ -11,7 +11,7 @@ def rga [
 }
 
 export def main [] {
-  [ (appearance) (weight) (melting) (density) (boiling) ]
+  [ (appearance) (weight) (melting) (density) (boiling) (formula) ]
   | reverse
   | each { reject page }
   | reduce { |lhs,rhs| $lhs | join $rhs name }
@@ -40,7 +40,7 @@ export def density [] {
 }
 
 export def boiling [] {
-  rga '$1:$2:$3' '(?<name>[^:]+):(?<page>\d+):(?<boil_C>.*):(?<boil_F>.*)' 'Page (\d+): .*[Bb]oiling point\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(?:(.+) °C (?:\(?(.+) °F)).+'
+  rga '$1:$2:$3' '(?<name>[^:]+):(?<page>\d+):(?<boil_C>.*):(?<boil_F>.*)' 'Page (\d+): .*[Bb]oiling point.*\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(.+) °C(?: \(?(.+) °F)?.*'
   | move page --after boil_F
 }
 
