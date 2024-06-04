@@ -101,9 +101,14 @@ export def gcd [
 export def phi [] {
   let n = $in
 
-  (2..($n - 1)
-  | filter { |i| (gcd-presort $i $n) == 1 }
-  | length) + 1
+  if $n == 0 or $n == 1 {
+    0
+  } else {
+    (2..($n - 1)
+    | filter { |i| (gcd-presort $i $n) == 1 }
+    | length) + 1
+    
+  }
 }
 
 # Creates a list T where the ith entry equals ($in ** (2 ** i)) mod $mod, for all i s.t. 2 ** i <= p
