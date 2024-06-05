@@ -45,28 +45,6 @@ export def comb [
   ($set | perm $choose) / ($choose | fac)
 }
 
-export def reduce-mod [
-  modulus: int
-] {
-  if $modulus < 2 {
-    error make {
-      msg: "moduluses less than 2 are unsupported",
-      label: {
-        text: $"($modulus) < 2",
-        span: (metadata $modulus).span
-      }
-    }
-  }
-
-  let r = $in mod $modulus
-  
-  if $r < 0 {
-    $r + $modulus
-  } else {
-    $r
-  }
-}
-
 # INTRINSIC:
 # x < y
 def gcd-presort [
@@ -111,61 +89,132 @@ export def phi [] {
   }
 }
 
-# Creates a list T where the ith entry equals ($in ** (2 ** i)) mod $mod, for all i s.t. 2 ** i <= p
+# Finds the non-negative remainder when dividing an integer by a divisor
 #
 # Signatures:
-# <int> | math n-pow2 <int> <int> -> <list>
-def n-pow2 [
-  p: int,
-  mod: int
+# <int> | math rem <int> -> <int>
+export def rem [
+  divisor: int # A non-negative integer to divide the input by
 ] {
-  let n = $in
-  let p_lg = ($p | math log 2) | math floor
-  mut n_pow2 = [1 ($n mod $mod)] | append 3..$p_lg
-
-  for i in 2..$p_lg {
-    let prev = $n_pow2 | get ($i - 1)
-    let cur = ($prev ** 2) mod $mod
-    
-    $n_pow2 = ($n_pow2 | upsert $i $cur)
+  if $divisor < 1 {
+    error make {
+      msg: "divisors less than 1 are unsupported",
+      label: {
+        text: $"($divisor) < 1",
+        span: (metadata $divisor).span
+      }
+    }
   }
 
-  $n_pow2
+  let r = $in mod $divisor
+  
+  if $r < 0 {
+    $r + $divisor
+  } else {
+    $r
+  }
 }
 
+# Performs fast modulus exponentiation
+#
+# Signatures:
+# <int> | math rem-pow <int> <int> -> <list>
 export def rem-pow [
-  p: int,
-  mod: int
+  pow: int # The power to raise the input to
+  mod: int # The modulus to compute the power within
 ] {
   let n = $in
 
-  if $mod < 2 {
-    error make {
-      message: "modulus must be at least 2"
-    }
-  }
 
-  if $p < 0 {
+  if $mod < 1 {
     error make {
-      message: "cannot raise to negative powers"
+      message: "modulus must be at least 1"
     }
-  } else if $p == 0 {
-    1
-  } else if $p == 1 {
-    $n mod $p
+  } else if $mod == 1 {
+    0
   } else {
-    let n_pow2 = $n | n-pow2 $p $mod
+    if $pow < 0 {
+      error make {
+        message: "cannot raise to negative powers"
+      }
+    } else if $pow == 0 {
+      1
+    } else if $pow == 1 {
+      $n mod $mod
+    } else {
+      let pow2_len = $pow | math log 2 | math floor
 
-    mut ret = 1
-    mut left = $p
+      # $pows2.i = $n ** (2 ** $i) mod $mod
+      mut pows2 = ([($n mod $mod)] | append 2..$pow2_len)
 
-    while $left > 0 {
-      let left_lg2 = $left | math log 2 | math floor
+      for i in 2..$pow2_len {
+        let prev = $pows2 | get ($i - 1)
+        let cur = ($prev ** 2) mod $mod
+    
+        $pows2 = ($pows2 | upsert $i $cur)
+      }
 
-      $left -= 2 ** $left_lg2
-      $ret *= (($n_pow2 | get $left_lg2) mod $mod)
+      mut acc = 1
+      mut left = $pow
+
+      while $left > 0 {
+        let left_lg2 = $left | math log 2 | math floor
+
+        $left -= 2 ** $left_lg2
+        $acc = ($acc * ($pows2 | get $left_lg2) mod $mod)
+      }
+
+      $acc
     }
-
-    $ret
   }
+}
+
+# Creates a table T such that `$T | get $x | get $y` is $x ** $y reduced-mod,
+# for $x,$y in reduced-mod.
+# This function computes the table more efficiently than filling each cell
+# with `math rem-pow`.
+#
+# Signature
+# math rem-pow-table <int> -> <list<list>>
+export def rem-pow-table [
+  mod: int
+] {
+  let xs = 0..($mod - 1)
+  let xs2 = 2..($mod - 1)
+
+  let id = [
+    ($xs | each { 0 })
+    ($xs | each { 1 })
+  ]
+
+  let mult_non_id = $xs2 | par-each --keep-order { |a|
+    $xs | par-each --keep-order { |b|
+      $a * $b mod $mod
+    }
+  }
+
+  # Multiplication table
+  # $mult.x.y = x * y mod $mod
+  let mult = $id | append $mult_non_id
+  
+  let pow_non_id = $xs2 | par-each --keep-order { |k|
+    $xs2 | reduce --fold [1 $k] { |pow, pows|
+      # x^(a+b) = x^a * x^b, so use that to our advantage
+
+      # Find suitable a,b
+      let a = $pow / 2 | math floor
+      let b = $pow - $a
+
+      # Reuse old calculations to get x^a,x^b mod $mod
+      let k_a = $pows | get $a
+      let k_b = $pows | get $b
+
+      # Find x^(a+b) mod $mod
+      let k_pow = $mult | get $k_a | get $k_b
+
+      $pows | append $k_pow
+    }
+  }
+
+  $id | append $pow_non_id
 }
