@@ -35,7 +35,7 @@ export def melting [] {
 }
 
 export def density [] {
-  rga '$1:$2' '(?<name>[^:]+):(?<page>\d+):(?<density>.*)' 'Page (\d+): .*Density\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(\d+(?:[\.,]\d+)) g\/(?:cm3|mL).+'
+  rga '$1:$2' '(?<name>[^:]+):(?<page>\d+):(?<density>.*)' 'Page (\d+): .*[Dd]ensity\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(\d+(?:[\.,]\d+)) g\/(?:cm3|mL).+'
   | move page --after density
 }
 
