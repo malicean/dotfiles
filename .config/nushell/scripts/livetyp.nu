@@ -30,8 +30,10 @@ export def main [
   typst compile $source
 
   let abs = $source | path expand
-  let render = job spawn --group $group { watch $abs { typst compile $abs } }
-  let view = job spawn raw --group $group $"zathura ($source | path change ext pdf)"
+  # `job spawn` no longer works because the value of $abs is not moved;
+  # `view source` shows `$abs` instead of its value
+  let render = job spawn raw --group $group $"watch `($abs)` { typst compile `($abs)` } }"
+  let view = job spawn raw --group $group $"xdg-open ($source | path change ext pdf)"
 
   helix $source
 

@@ -30,12 +30,12 @@ export def weight [] {
 }
 
 export def melting [] {
-  rga '$1:$2:$3' '(?<name>[^:]+):(?<page>\d+):(?<melt_C>.*):(?<melt_F>.*)' 'Page (\d+): Melting point\/range: (.+) °C (?:\((.+) °F\)).+'
+  rga '$1:$2:$3' '(?<name>[^:]+):(?<page>\d+):(?<melt_C>.*):(?<melt_F>.*)' 'Page (\d+): Melting point\/range: (.+) °C (?:\((.+) °F\)).*'
   | move page --after melt_F
 }
 
 export def density [] {
-  rga '$1:$2' '(?<name>[^:]+):(?<page>\d+):(?<density>.*)' 'Page (\d+): .*[Dd]ensity\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(\d+(?:[\.,]\d+)) g\/(?:cm3|mL).+'
+  rga '$1:$2' '(?<name>[^:]+):(?<page>\d+):(?<density>.*)' 'Page (\d+): .*[Dd]ensity\n(?:Page \d+: .*\n)*?Page \d+: [^\d\n]*(.+) g\/(?:cm3|mL).*'
   | move page --after density
 }
 
