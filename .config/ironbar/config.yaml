@@ -33,6 +33,7 @@ start:
     all_monitors: true
 center:
 end:
+  - type: volume
   - type: music
     player_type: mpd
     format: '{title}    {artist}'
