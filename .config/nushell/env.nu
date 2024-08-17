@@ -51,6 +51,6 @@ alias tig = git $"--git-dir=($env.HOME)/.dotfiles/" $"--work-tree=($env.HOME)"
 alias docs = git $"--git-dir=($env.HOME)/.docs/" $"--work-tree=($env.HOME)"
 alias py = ipython
 alias np = ncmpcpp
-alias npb = np --host 100.79.210.95 # plane tailscale IP
 alias t = kitty --detach
 alias r = ranger
+alias s = kitty +kitten ssh

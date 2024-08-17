@@ -1,6 +1,8 @@
 local wezterm = require 'wezterm'
 
 return {
+  enable_wayland = false,
+
   color_scheme = 'Shapeshifter (light) (terminal.sexy)',
   colors = {
     visual_bell = '#ff8080'
